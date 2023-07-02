@@ -1,0 +1,22 @@
+{% extends "muestra.html" %}
+{% load static %}
+{% block title %}productos{% endblock title %}
+{% block body %}
+<h1>Productos</h1>
+{% for cat in categorias %}
+    <ul><strong><li>{{ cat }}</li></strong>
+    {% for subcat in subcategorias %}
+        {% if subcat.categoria == cat %}
+            <ol>{{ subcat.nombre }}
+            {% for producto in productos  %}
+            {% if producto.subcategoria.nombre == subcat.nombre %}
+                <li> {{ producto.nombre }} <img src="{{producto.imagen.url}}" style="height: 50px; width: 50px;"> <p>{{producto.descripcion}}</p></li>
+            {% else %}
+            {% endif %}
+            {% endfor %}
+        {% endif %}
+        </ol>
+    {% endfor %}
+    </ul>
+{% endfor %}
+{% endblock body %}
