@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto</title>
+  <link rel="stylesheet" href="CSS/semantic.css">
+  <link rel="stylesheet" href="CSS/estilos.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/semantic.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Aquí puedes agregar tu menú -->
+    <nav>
+      <!-- Contenido de tu menú -->
+    </nav>
+  </header>
+
+  <div class="centered-content">
+    <div class="ui container">
+      <div class="product0-container">
+        <div class="column-ps">
+          <div class="main-image">
+            <img id="mainImage" src="Img/Brocha + balaca.webp" alt="Imagen"> <!--imagen del producto-->
+          </div>
+          <hr>
+          <h4>Otras imágenes:</h4> 
+          <div class="other-images">
+            <ul>
+              <li><img class="small-image selected" src="Img/Brocha + balaca.webp" alt="Imagen 1"
+                  onclick="changeMainImage(this)"></li> <!--otras imagenes agregadas del producto-->
+              <li><img class="small-image" src="Img/cubo_pulidor2.jpg" alt="Imagen 2" onclick="changeMainImage(this)">
+              </li><!--otras imagenes agregadas del producto-->
+            </ul>
+          </div>
+        </div>
+        <div class="columnn">
+          <h3>Título del producto</h3><!--Nombre del producto-->
+          <div class="divider"></div>
+          <h5>Descripción</h5>
+          <div class="divider"></div>
+          <h5>Precio$$</h5>
+          <p class="price"></p> <!-- Agrega el precio-->
+          <p class="product-info"></p> <!-- Añade la descripción -->
+          <p class="stock-info"></p> <!-- Agrega la cantidad en stock -->
+          <div class="divider"></div>
+          <div class="ui form">
+            <div class="flex-container">
+              <div class="field">
+                <label>Cantidad:</label>
+                <div class="ui buttons">
+                  <button class="decrease ui button" onclick="disminuir()">-</button>
+                  <p id="contador">0</p>
+                  <button class="increase ui button" onclick="aumentar()">+</button>
+                </div>
+              </div>
+              <div>
+                <div class="ui vertical animated button black" tabindex="0">
+                  <div class="hidden content">Añadir</div>
+                  <div class="visible content">
+                    <i class="shop icon "></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <p class="category-info">Categoría: Ejemplo</p> <!-- Agrega la información de la categoría -->
+            <p class="subcategory-info">Subcategoría: Ejemplo</p> <!-- Agrega la información de la subcategoría -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/prosolitario.js"></script>
+</body>
+
+</html>

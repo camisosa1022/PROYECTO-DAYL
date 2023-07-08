@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/semantic.css">
+    <link rel="stylesheet" href="css/prueba.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ui grid container">
+        <div class="eight wide column stackable">
+          <div class="row img"><img src="img/globo_corona.jpg" alt=""></div>
+        </div>
+        <div class="eight wide column stackable">
+        <div class="row"><h1>Globo negro</h1></div>
+        <div class="row"><h2>
+            <span class="original-price">$100000</span>
+            <span class="discounted-price">$50000</span><br>
+            <span>IVA INCLUIDO</span>
+        </h2></div>
+        <div class="row"><p>Descripcion del producto</p></div>
+        <div class="row">
+            <div class="ui grid container">
+                <div class="two wide column"><p>Color</p></div>
+                <div class="fourteen wide column">
+                    <select name="Colores" id="" class="ui fluid dropdown">
+                        <option value="red" class="item">red</option>
+                        <option value="blue" class="item">blue</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+          <div class="row">
+            <div class="ui grid container stackable">
+                <div class="seven wide column">
+                    <div class="ui action input">
+                        <button class="ui icon button decrease-btn"><i class="minus icon"></i></button>
+                        <input type="number" class="ui input focus" id="quantity-input" min="0" value="0"></input>
+                        <button class="ui icon button increase-btn"><i class="plus icon"></i></button>
+                    </div>
+                </div>
+                <div class="nine wide column">
+                    <button class="ui icon primary basic button"><i class="icon shop"></i><span class="Text">AGREGAR AL CARRITO</span></button>
+                </div>
+            </div>
+          </div>
+          <div class="row"><br>
+              <div><span><strong>Categoria</strong></div><br>
+              <div><span><strong>Subcategoria</strong></div>
+          </div>
+        </div>
+    </div>
+</body>
+<script src="js/prueba.js"></script>
+</html>
