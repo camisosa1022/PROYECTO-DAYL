@@ -36,3 +36,4 @@ quantityInput.addEventListener('change', () => {
       iconElement.classList.add("shop");
     });
   });
+
