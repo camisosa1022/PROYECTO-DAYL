@@ -10,6 +10,15 @@
   }
 }
 
+/*Este estilo no entiendo que hace*/
+.ui.dropdown.selection:not(.multiple):not(.search)>.dropdown.icon {
+  color: #5599f8 !important;
+}
+.ui.selection.dropdown:hover {
+  border-color: #5599f8 !important;
+}
+
+
 .eight.wide.column.stackable .row.img {
   display: flex;
   align-items: center;
@@ -95,6 +104,15 @@ input[type="number"] {
 .decrease-btn,
 .increase-btn {
   cursor: pointer;
+  border: 1px solid #797878 !important;
+  color: #272727 !important;
+  background-color: #fff !important;
+}
+.increase-btn:hover,
+.decrease-btn:hover {
+  background-color: #5599f8 !important;
+  color: #fff !important;
+  border-color: #5599f8 !important;
 }
 
 .ui.icon.primary.basic.button {
@@ -114,34 +132,6 @@ input[type="number"] {
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.3);
   padding: 20px;
 }
-
-body {
-  background: #D4EEFF;
-  /*este es el mismo color del body de estilos*/
-}
-
-.increase-btn,
-.decrease-btn {
-  border: 1px solid #797878 !important;
-  color: #272727 !important;
-  background-color: #fff !important;
-}
-
-.increase-btn:hover,
-.decrease-btn:hover {
-  background-color: #5599f8 !important;
-  color: #fff !important;
-  border-color: #5599f8 !important;
-}
-
-.ui.dropdown.selection:not(.multiple):not(.search)>.dropdown.icon {
-  color: #5599f8 !important;
-}
-
-.ui.selection.dropdown:hover {
-  border-color: #5599f8 !important;
-}
-
 .ui.primary.basic.button:hover {
   background-color: #5599f8 !important;
   color: #fff !important;

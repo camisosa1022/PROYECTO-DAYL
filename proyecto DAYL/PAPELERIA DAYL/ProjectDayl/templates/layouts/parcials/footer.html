@@ -1,28 +1,37 @@
 {% load static %}
 <footer>
-    <body>
         <div class="footer">
+            <div class="column-footer"></div>
             <div>
                 <img src="{% static 'img/logo dayl.png' %}"><!--Aca va el logo de la empresa-->
             </div>
-            <div>
+    
+            <div class="column-footer">
                 <h5>NUESTRA EMPRESA</h5>
-                <p><a href="#">Sobre Nososotros</a></p><!--aca va el hipervinculos de nuestra empresa-->
-                <p><a href="#">Términos y Condiciones</a></p><!--Aca van los terminos y condiciones-->
-                <p><a href="#">Politicas de Privacidad</a></p><!--aca va el hipervinculos de politicas de privacidad-->
+                <div class="center-links">
+                    <a href="#">Sobre Nososotros</a><!--aca va el hipervinculos de nuestra empresa-->
+                    <br>
+                    <a href="#">Términos y Condiciones</a><!--Aca van los terminos y condiciones-->
+                    <br>
+                    <a href="#">Politicas de Privacidad</a><!--aca va el hipervinculos de politicas de privacidad-->
+                </div>
             </div>
-            <div>
-                <h5>NUESTROS PRODUCTOS</h5>
-                {% for categoria in categorias %}
-                    <p><a href="#">{{categoria.nombre}}</a></p>
-                {% endfor %}
+            <div class="column-footer out">
+                <a href="{% url 'producto_index' %}"><h5>NUESTROS PRODUCTOS</h5></a>
+                <div class="center-links">
+                    {% for categoria in categorias %}
+                    <a href="#">{{categoria.nombre}}</a><!--aca va el hipervinculo para ir a la vista de jugueteria-->
+                    <br>
+                    {% endfor %}
+                </div>
             </div>
-            <div class="contact-container">
+            <div class="contact-container out">
                 <h5>CONTACTANOS</h5>
-                <a class="whatsapp-icon" href="#"><!--aca va el hipervinculo para ir a la vista de jugueteria-->
+                <a class="whatsapp-icon" href="https://wa.me/tunumerodewhatsapp"
+                    target="_blank"><!--Link del numero del wpp y clase del tamaño del icono-->
                     <i class="whatsapp icon"></i><!--Icono de wpp-->
-                </a>
+                </a><!--Icono de wpp-->
             </div>
-            <div>
+            <div class="column"></div>
         </div>
 </footer>

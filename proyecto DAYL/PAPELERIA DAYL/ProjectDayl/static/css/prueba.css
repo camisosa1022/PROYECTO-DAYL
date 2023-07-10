@@ -1,0 +1,150 @@
+@media (max-width: 700px) {
+  .eight.wide.column.stackable {
+    width: 100% !important;
+    /* Forzar el ancho al 100% para que las columnas se apilen */
+  }
+
+  .row .ui.grid.container .two.column {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+}
+
+/*Este estilo no entiendo que hace*/
+.ui.dropdown.selection:not(.multiple):not(.search)>.dropdown.icon {
+  color: #5599f8 !important;
+}
+.ui.selection.dropdown:hover {
+  border-color: #5599f8 !important;
+}
+
+
+.eight.wide.column.stackable .row.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eight.wide.column.stackable .row {
+  min-height: 70px;
+}
+
+.eight.wide.column.stackable img {
+  width: 75%;
+}
+
+.eight.wide.column.stackable .row:first-child>h1 {
+  border-bottom: 1px solid #000;
+  padding-bottom: 15px;
+}
+
+.eight.wide.column.stackable .row h2 .discounted-price,
+.eight.wide.column.stackable .row h2 .original-price {
+  margin-right: 5px;
+}
+
+.eight.wide.column.stackable .row h2 .discounted-price {
+  color: #98c3ff;
+  font-size: xx-large;
+}
+
+.eight.wide.column.stackable .row h2 .original-price {
+  color: #a9b0ba;
+  text-decoration: line-through;
+  font-size: smaller;
+}
+
+.eight.wide.column.stackable .row>p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.row .ui.grid.container .two.column {
+  display: flex;
+  align-items: center;
+
+}
+
+.row .ui.grid.container .two.column p {
+  font-weight: bold;
+}
+
+.row .ui.action.input #quantity-input {
+  max-width: 80px;
+  min-width: 40px;
+}
+
+.ui.vertical.animated.button {
+  background-color: transparent !important;
+  width: 70%;
+}
+
+.ui.vertical.animated.button:hover {
+  background-color: transparent !important;
+}
+
+.ui.vertical.animated.button:active {
+  background-color: transparent !important;
+}
+
+.ui.vertical.animated.button .hidden.content {
+  color: #000;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.decrease-btn,
+.increase-btn {
+  cursor: pointer;
+  border: 1px solid #797878 !important;
+  color: #272727 !important;
+  background-color: #fff !important;
+}
+.increase-btn:hover,
+.decrease-btn:hover {
+  background-color: #5599f8 !important;
+  color: #fff !important;
+  border-color: #5599f8 !important;
+}
+
+.ui.icon.primary.basic.button {
+  width: 100%;
+}
+
+.ui.icon.primary.basic.button span.Text {
+  margin-left: 8px;
+}
+
+/*estilos para mejorar diseño productos alejandro*/
+
+.nuevo-container {
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.3);
+  padding: 20px;
+}
+.ui.primary.basic.button:hover {
+  background-color: #5599f8 !important;
+  color: #fff !important;
+  border-color: #5599f8 !important;
+}
+
+#quantity-input {
+  border: 1px solid #797878 !important;
+  border-radius: 0 !important;
+  width: 50px !important;
+  text-align: center;
+}
+
+.decrease-btn {
+  border-radius: 0.28571429rem 0px 0px 0.28571429rem !important;
+}
