@@ -13,6 +13,35 @@
 </head>
 
 <body>
+    <div class="container-titulo"> <!--agregado el 9/julio-->
+        <div class="subcat-container">
+            <div class="subcat-name">Subcategoría</div>
+            <i class="icon home home-icon"></i>
+            <div class="breadcrumb">
+                <i class="right angle icon"></i>
+                <a href="#">Categoría</a>
+                <i class="right angle icon"></i>
+                <a href="#">Subcategoría</a>
+            </div>
+        </div>
+    </div><!--fin-->
+    <div class="container filtros"> <!--filtros-->
+        <div class="ui form filtros">
+            <div class="inline fields">
+                <div class="field">
+                    <label>Filtrar por:</label>
+                    <select id="filtro" class="ui dropdown">
+                        <option value="">Seleccionar opción</option>
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="productos" class="ui divided items"></div>
+    </div> <!--fin-->
     <div class="gallery">
         <div class="content-productos product-container"> <!--cantidad de cards necesarias-->
             <img src="img/cubo_pulidor.jpg"><!--imagenes de los productos-->

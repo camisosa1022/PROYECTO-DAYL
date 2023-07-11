@@ -170,7 +170,7 @@ div.content-productos.product-container li {
     background: #5EA0FF;
 }
 
-div.content-productos.product-container > a {
+div.content-productos.product-container>a {
     text-align: center;
     font-size: 24px;
     color: #fff;
@@ -229,14 +229,17 @@ div.content-productos.product-container > a {
     display: flex;
     align-items: center;
 }
+
 @media (max-width: 350px) {
-    div.content-productos.product-container h3{
+    div.content-productos.product-container h3 {
         font-size: 25px;
     }
-    div.content-productos.product-container p{
+
+    div.content-productos.product-container p {
         font-size: 20px;
     }
 }
+
 /* estilos del carrusel*/
 
 .container-carrusel {
@@ -293,7 +296,6 @@ div.content-productos.product-container > a {
 header {
     background-color: #87CEEB;
 }
-
 
 .nav-superior {
     display: flex;
@@ -359,23 +361,9 @@ header {
     position: relative;
     z-index: 2;
     max-width: 800px;
-    /* Ajusta el ancho máximo deseado */
     margin: 0 auto;
-    /* Centra el contenedor horizontalmente */
 }
 
-@media (max-width:1100px) {
-    .menu-container .cont-ul{
-        align-items: baseline!important;
-    }
-    .blue-button.out{
-        display: none;
-    }
-
-    .cart-icon-custom {
-        font-size: 1.2rem!important; /* Ajusta el tamaño del ícono según tus necesidades */
-    }
-}
 .menu-container .cont-ul {
     display: flex;
     align-items: center;
@@ -389,7 +377,6 @@ header {
     cursor: pointer;
     padding: 1.2vw;
     transition: all .3s ease 0s;
-
 }
 
 .menu-container li:hover {
@@ -450,6 +437,104 @@ header {
 
 .menu-container a {
     color: #fff;
+}
+
+/* Estilos para el menú hamburguesa */
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.hamburger-ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger-ul li {
+    padding: 1.2vw;
+    transition: all .3s ease 0s;
+}
+
+.hamburger-ul li:hover {
+    background-color: #87CEEB;
+}
+
+@media (max-width: 767px) {
+    .menu-container .cont-ul {
+        display: none;
+    }
+
+    .menu-container .cart-icon {
+        font-size: 1.2rem !important;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .hamburger-menu .hamburger-icon {
+        display: flex;
+    }
+
+    .hamburger-ul {
+        display: flex;
+        justify-content: center;
+        background-color: #87CEEB;
+        /* Nuevo fondo para el menú hamburguesa */
+        position: absolute;
+        /* Ajuste de posición para que el menú se superponga al contenido */
+        top: 100%;
+        /* Posición relativa al elemento padre */
+        left: 0;
+        /* Posición relativa al elemento padre */
+        width: 100%;
+        /* Ocupar todo el ancho disponible */
+        padding: 1rem;
+        /* Espaciado interno */
+    }
+
+    .hamburger-ul li {
+        padding: 0.8rem;
+        /* Ajuste del espaciado entre elementos */
+    }
+
+    .hamburger-icon,
+    .cart-icon-container {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .hamburger-icon {
+        margin-right: 10px;
+        /* Ajusta el margen derecho según tus necesidades */
+    }
+}
+
+.hamburger-ul .develop.active {
+    background-color: #87CEEB;
+}
+
+.hamburger-ul .develop.active .ul-second {
+    display: block;
 }
 
 
@@ -671,4 +756,55 @@ header {
         left: 20px;
         transform: rotate(90deg);
     }
+}
+
+/*estilos de la subcategoria pruductos*/
+/*agregado el 9/julio*/
+
+.container-titulo {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.subcat-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.subcat-name {
+    flex: 1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.home-icon {
+    font-size: 24px;
+    margin-right: 35px;
+}
+
+.breadcrumb {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.breadcrumb a {
+    margin-right: 10px;
+}
+
+/*estilos de filtros*/
+.filtros {
+    padding: 20px;
+}
+
+.ui.form .field>.selection.dropdown {
+    width: 20% !important;
+}
+
+.field-label {
+    margin-right: 1em;
 }
