@@ -7,7 +7,7 @@
             </div>
     
             <div class="column-footer">
-                <h5>NUESTRA EMPRESA</h5>
+                <a href="" class="sin-diseño"><h5>NUESTRA EMPRESA</h5></a>
                 <div class="center-links">
                     <a href="#">Sobre Nososotros</a><!--aca va el hipervinculos de nuestra empresa-->
                     <br>
@@ -17,16 +17,16 @@
                 </div>
             </div>
             <div class="column-footer out">
-                <a href="{% url 'producto_index' %}"><h5>NUESTROS PRODUCTOS</h5></a>
+                <a href="{% url 'producto_index' %}" class="sin-diseño"><h5>NUESTROS PRODUCTOS</h5></a>
                 <div class="center-links">
                     {% for categoria in categorias %}
-                    <a href="#">{{categoria.nombre}}</a><!--aca va el hipervinculo para ir a la vista de jugueteria-->
+                    <a href="{% url 'categorias' categoria %}">{{categoria.nombre}}</a><!--aca va el hipervinculo para ir a la vista de jugueteria-->
                     <br>
                     {% endfor %}
                 </div>
             </div>
             <div class="contact-container out">
-                <h5>CONTACTANOS</h5>
+                <a href="" class="sin-diseño"><h5>CONTACTANOS</h5></a>
                 <a class="whatsapp-icon" href="https://wa.me/tunumerodewhatsapp"
                     target="_blank"><!--Link del numero del wpp y clase del tamaño del icono-->
                     <i class="whatsapp icon"></i><!--Icono de wpp-->
@@ -35,3 +35,4 @@
             <div class="column"></div>
         </div>
 </footer>
+<script src="{% static 'js/index.js' %}"></script>

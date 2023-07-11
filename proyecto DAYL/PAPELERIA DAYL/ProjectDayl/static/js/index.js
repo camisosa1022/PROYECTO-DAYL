@@ -57,3 +57,31 @@ function toggleForm() {
     questionSection.style.display = 'block';
   }
 }
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.bars.icon');
+  const contenido = document.querySelector('.cont-menu');
+
+  hamburger.addEventListener('click', () => {
+      if (contenido.style.display == 'none') {
+          contenido.style.display = 'block';
+          console.log("Activo");
+      } else if (contenido.style.display == 'block') {
+          contenido.style.display = 'none';
+          console.log("Inactivo");
+      }
+  });
+
+  const opcion = document.querySelectorAll('.opcion');
+
+  opcion.forEach(e => {
+      e.addEventListener("click", function(e) {
+          const padre = e.target.parentNode;
+          if (padre.children.length >= 2) {
+              padre.children[1].classList.toggle('animation');
+          }
+          if (padre.parentNode.children.length >= 2) {
+              padre.parentNode.children[1].classList.toggle('animation');
+          }
+      })
+  })
+});

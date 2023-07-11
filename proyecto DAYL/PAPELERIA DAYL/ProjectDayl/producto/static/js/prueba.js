@@ -31,7 +31,6 @@ quantityInput.addEventListener('change', () => {
   
     // Agregar el evento mouseout después de cambiar la clase a "plus"
     this.addEventListener("mouseout", function() {
-      const iconElement = this.querySelector("i.icon");
       iconElement.classList.remove("plus");
       iconElement.classList.add("shop");
     });
