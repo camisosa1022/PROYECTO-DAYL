@@ -1,0 +1,36 @@
+{% load static %}
+
+<div class="nav-superior">
+    <div class="logo">
+        <img src="{% static 'img/logo dayl.png' %}" alt="Logo"><!--aca va el logo de dayl-->
+    </div>
+    <div class="busc-btn">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button class="search-button">Buscar</button>
+        </div>
+        <div class="user-buttons">
+            <button class="blue-button out"><a href="#">Iniciar sesión</a></button> <!--aca va el hipervinculo para el registro-->
+            <button class="blue-button"><a href="#">Registro</a></button> <!--aca va el hipervinculo para el registro-->
+        </div>
+    </div>
+</div>
+<div class="menu-container">
+    <ul class="cont-ul">
+        {% for categoria in categorias  %}
+        <li class="develop"> <!--aca es un li (categoria) para el menu y serian 3 li -->
+            <a href="{% url 'categorias' categoria %}">{{categoria.nombre|upper}}</a>
+            <ul class="ul-second">
+                {% for subcategoria in subcategorias %}
+                    {% if subcategoria.categoria == categoria %}
+                    <li class="back"><a href="{% url 'categorias' categoria subcategoria.nombre %}">{{subcategoria.nombre|upper}}</a></li> 
+                    {% endif %}
+                {% endfor %} <!--aca es un ul para saber que son subcategorias por cada li  -->
+            </ul>
+        </li>
+        {% endfor %}
+        <li><a href="#">NUESTRA EMPRESA</a></li> <!--aca son 2 li que son otras categorias-->
+        <li><a href="#">PREGUNTAS FRECUENTES</a></li>
+        {% include 'layouts/parcials/carrito.html' %}
+    </ul>
+</div>
