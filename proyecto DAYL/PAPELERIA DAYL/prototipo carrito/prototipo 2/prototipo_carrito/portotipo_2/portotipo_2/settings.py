@@ -81,11 +81,11 @@ WSGI_APPLICATION = 'portotipo_2.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "django_sample",
-        "USER": "postgres",
-        "PASSWORD": "anderson1234",
+        "NAME": "pruebasDayl",
+        "USER": "alejo",
+        "PASSWORD": "8286498",
         "HOST": "127.0.0.1",
         "PORT": "5432",
     }
