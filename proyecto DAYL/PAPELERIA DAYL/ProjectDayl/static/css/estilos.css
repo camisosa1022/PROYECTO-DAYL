@@ -209,7 +209,7 @@ div.content-productos.product-container > a {
 }
 
 .product-container p {
-    height: 40px;
+    height: 55px;
     overflow: hidden;
 }
 
@@ -671,4 +671,27 @@ header {
         left: 20px;
         transform: rotate(90deg);
     }
+}
+
+div.header.modal{
+    background-color: #5EA0FF!important;
+    color: #fff !important; 
+}
+.footer.modal > .user-buttons > .blue-button{
+    color: #fff;
+    background-color: #87CEFA;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.footer.modal > .user-buttons > .red-button{
+    color: #fff;
+    background-color: #fc5a5a;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
 }

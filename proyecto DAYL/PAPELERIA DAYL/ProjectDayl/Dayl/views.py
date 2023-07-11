@@ -14,7 +14,6 @@ def index(request):
                                          "k": k,})
 def obtener_imagen_color(request):
     color_id = request.GET.get('colorId')
-    print(color_id)
     try:
         color = Color.objects.get(id=color_id)
         imagen_url = color.imagen.url
@@ -22,3 +21,5 @@ def obtener_imagen_color(request):
     except Color.DoesNotExist:
         return JsonResponse({'error': 'Color no encontrado',
                              "color": color_id})
+def registro(request):
+    return render(request, 'layouts/parcials/register.html')

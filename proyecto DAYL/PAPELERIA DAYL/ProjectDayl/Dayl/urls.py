@@ -25,4 +25,5 @@ urlpatterns = [
     path('', views.index, name="index"),
     path('producto/',include('producto.urls'), name="product"),
     path('obtener_imagen_color/', views.obtener_imagen_color, name='obtener_imagen_color'),
+    path('registro/', views.registro, name="registro"),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

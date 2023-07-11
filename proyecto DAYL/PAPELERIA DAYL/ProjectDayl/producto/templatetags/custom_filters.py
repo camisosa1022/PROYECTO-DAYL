@@ -28,3 +28,10 @@ def primera_imagen(context,producto):
 def imagenes_color(context,producto):
     imagenes = producto.color_set.all()
     return imagenes
+@register.filter
+def productos_categoria(productos,categoria):
+    productosreturn = []
+    for producto in productos:
+        if producto.subcategoria.categoria.nombre == categoria:
+            productosreturn.append(producto)
+    return productosreturn

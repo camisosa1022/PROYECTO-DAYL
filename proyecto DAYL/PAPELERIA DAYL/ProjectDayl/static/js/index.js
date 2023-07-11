@@ -32,3 +32,28 @@ $(document).ready(function() {
     $(this).children('.menu-dropdown').toggleClass('active');
   });
 });
+
+$(document).ready(function() {
+  $('#registro-btn').click(function() {
+      $('#registro-content').load('/registro/');
+      $('.registro-modal').modal('show');
+  });
+});
+function toggleForm() {
+  var personType = document.getElementById('person-type').value;
+  var juridicaForm = document.getElementById('juridica-form');
+  var naturalForm = document.getElementById('natural-form');
+  var questionSection = document.getElementById('question-section');
+
+  if (personType === 'juridica') {
+    juridicaForm.style.display = 'block';
+    naturalForm.style.display = 'none';
+  } else if (personType === 'natural') {
+    juridicaForm.style.display = 'none';
+    naturalForm.style.display = 'block';
+  } else {
+    juridicaForm.style.display = 'none';
+    naturalForm.style.display = 'none';
+    questionSection.style.display = 'block';
+  }
+}
