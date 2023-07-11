@@ -1,23 +1,26 @@
 {% load static %}
-<link rel="stylesheet" href="{% static 'css/carrusel.css' %}">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <div class="container">
-        <div class="swiper swiper-hero">
-            <div class="swiper-wrapper">
-                {% for producto in productos %}
+{% load custom_filters %}
+    <div class="container-carrusel">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            {% for producto in productos %}
                 {% if producto.oferta >= 5 %}
-                    <div class="swiper-slide"> <!-- clase para las opciones de las imagenes-->
-                        <a href=""><img src="{{producto.imagen.url}}" alt="" /></a> <!--aca se van a poner los links de las imagenes-->
-                        <div class="slide-price">${{producto.precio|floatformat:0}}</div>
-                    </div>
+                <div class="swiper-slide"><!--la cantidad de de imagenes que se vayan a mostrar, lo que ustedes consideren-->
+                    <a href=""><img src="{% with producto.color_set.first as primera_imagen %}
+                        {% if primera_imagen %}
+                            {{ primera_imagen.imagen.url }}
+                        {% endif %}
+                    {% endwith %}" class="swiper-image"></a><!--link de las imagenes--> 
+                    <div class="price-overlay">${% calcular_precio_oferta_iva producto.precio producto.porcentaje_iva producto.oferta as precioFinal %}{{precioFinal}}</div><!--precio-->
+                  </div>
                 {% endif %}
-                {% endfor %}
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            {% endfor %}
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-    </div>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="{% static 'js/carrusel.js' %}"></script>

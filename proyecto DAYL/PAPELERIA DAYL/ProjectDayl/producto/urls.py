@@ -5,5 +5,8 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path('',views.index,name="index")
+    path('',views.index,name="producto_index"),
+    path('<str:categoria>',views.categorias,name="categorias"),
+    path('<str:categoria>/<str:subcategoria>',views.categorias,name="categorias"),
+    path('<str:nombre_producto>/<int:id>/', views.producto, name='producto'),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

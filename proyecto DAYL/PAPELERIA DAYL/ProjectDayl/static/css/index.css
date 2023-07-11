@@ -86,7 +86,7 @@ header {
     list-style: none;
 }
 
-li {
+.menu-container li {
     cursor: pointer;
     padding: 1.5vw;
     transition: all .3s ease 0s;
