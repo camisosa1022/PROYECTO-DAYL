@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS</title>
+    <link rel="stylesheet" href="css/semantic.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/semantic.js"></script>
+</head>
+
+<body>
+    <div class="container-titulo"> <!--agregado el 9/julio-->
+        <div class="subcat-container">
+            <div class="subcat-name">Subcategoría</div>
+            <i class="icon home home-icon"></i>
+            <div class="breadcrumb">
+                <i class="right angle icon"></i>
+                <a href="#">Categoría</a>
+                <i class="right angle icon"></i>
+                <a href="#">Subcategoría</a>
+            </div>
+        </div>
+    </div><!--fin-->
+    <div class="container filtros"> <!--filtros-->
+        <div class="ui form filtros">
+            <div class="inline fields">
+                <div class="field">
+                    <label>Filtrar por:</label>
+                    <select id="filtro" class="ui dropdown">
+                        <option value="">Seleccionar opción</option>
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="productos" class="ui divided items"></div>
+    </div> <!--fin-->
+    <div class="gallery">
+        <div class="content-productos product-container"> <!--cantidad de cards necesarias-->
+            <img src="img/cubo_pulidor.jpg"><!--imagenes de los productos-->
+            <h3>cubo_pulidor</h3> <!--nombre de los productos-->
+            <p>Descripción del producto, sus características, etc .</p> <!--descripcion de los productos-->
+            <div class="price-cart-container">
+                <div class="price-container">
+                    <h4>$10.000</h4> <!--precio de los productos-->
+                </div>
+                <div class="cart-icon"><i class="shopping cart icon"></i></div>
+            </div>
+            <a href="#" class="buy-1 btn-vermas">Ver Más</a> <!--link para dirigir a otra pagina-->
+        </div>
+    </div>
+
+    <script src="js/productos.js"></script>
+</body>
+
+</html>
