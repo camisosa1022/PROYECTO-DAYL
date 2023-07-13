@@ -1,0 +1,23 @@
+{% load static %}
+{% load custom_filters %}
+
+<div class="gallery">
+    {% for producto in productos %}
+    <div class="content-productos product-container">
+        <img src="{% primera_imagen producto %}" alt="Imagen del producto">
+        <h3>{{producto.nombre}}</h3> <!--nombre de los productos-->
+        <p>{{producto.descripcion}}</p> <!--descripcion de los productos-->
+        <div class="price-cart-container">
+            <div class="price-container">
+                <h4>${% calcular_precio_oferta_iva producto.precio producto.porcentaje_iva producto.oferta %}</h4> <!--precio de los productos-->
+            </div>
+            <a href="{% url 'Add' producto.id %}" class="cart-icon"><button><i class="shopping cart icon"></i></button></a>
+            
+        </div>
+        <a href="{% url 'producto' nombre_producto=producto.nombre id=producto.id %}" class="buy-1 btn-vermas">Ver Más</a> <!--link para dirigir a otra pagina-->
+    </div>
+    {% endfor %}
+    
+</div>
+
+<script src="{% static 'js/productos.js' %}"></script>

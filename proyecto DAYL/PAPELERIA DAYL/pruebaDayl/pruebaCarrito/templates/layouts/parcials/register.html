@@ -1,0 +1,185 @@
+ <!-- Selector de tipo de persona -->
+ <div id="question-section" class="input-box center">
+    <label for="person-type">Selecciona el tipo de persona:</label>
+    <select id="person-type" onchange="toggleForm()">
+        <option value="" selected>Seleccionar</option>
+        <option value="juridica">Jurídica</option>
+        <option value="natural">Natural</option>
+    </select><br>
+</div>
+<!-- Modul de persona >Natural< -->
+<div id="natural-form" style="display: none; margin-top: 15px;">
+    <form class="ui form">
+        <h4 class="ui dividing header">Información de Contacto</h4>
+        <div class="field">
+        <div class="fields">
+            <div class="nine wide field">
+                <label>Nombre completo</label>
+                <input type="text" name="shipping[first-name]" placeholder="Nombre Completo">
+            </div>
+            <div class="seven wide field">
+                <label>Numero de celular</label>
+                <input type="text" name="shipping[teléfono-cel]" placeholder="Telefono Celular">
+            </div>
+        </div>
+        </div>
+        <div class="field">
+        <div class="fields">
+            <div class="three wide field">
+                <label>Departamento</label>
+                <select class="ui fluid dropdown">
+                    <option value="" disabled>Escoge un departamento</option>
+                    <option value="AMZ">Amazonas</option>
+                    <option value="ANT">Antioquia</option>
+                    <option value="ARA">Arauca</option>
+                    <option value="ATL">Atlántico</option>
+                    <option value="BOL">Bolívar</option>
+                    <option value="BOY">Boyacá</option>
+                    <option value="CAL">Caldas</option>
+                    <option value="CAQ">Caquetá</option>
+                    <option value="CAS">Casanare</option>
+                    <option value="CAU">Cauca</option>
+                    <option value="CES">Cesar</option>
+                    <option value="CHO">Chocó</option>
+                    <option value="COR">Córdoba</option>
+                    <option value="CUN">Cundinamarca</option>
+                    <option value="GUA">Guainía</option>
+                    <option value="GUV">Guaviare</option>
+                    <option value="HUI">Huila</option>
+                    <option value="GUA">Guajira</option>
+                    <option value="MAG">Magdalena</option>
+                    <option value="MET">Meta</option>
+                    <option value="NAR">Nariño</option>
+                    <option value="NDS">Norte de Santander</option>
+                    <option value="PUT">Putumayo</option>
+                    <option value="QUI">Quindío</option>
+                    <option value="RIS">Risaralda</option>
+                    <option value="SAP">San Andrés y Providencia</option>
+                    <option value="SAN">Santander</option>
+                    <option value="SUC">Sucre</option>
+                    <option value="TOL">Tolima</option>
+                    <option value="VAC">Valle del Cauca</option>
+                    <option value="VAU">Vaupés</option>
+                    <option value="VID">Vichada</option>              
+                </select>
+            </div>
+            <div class="three wide field">
+                <label>Ciudad</label>
+                <input type="text" name="shipping[ciudad]" placeholder="Ciudad">
+            </div>
+            <div class="ten wide field">
+                <label>Dirección</label>
+                <input type="text" name="shipping[address]" placeholder="Dirección de la calle">
+            </div>
+        </div>
+        </div>
+        <div class="field">
+            <label>Correo electrónico</label>
+            <input type="email" name="shipping[email]">
+        </div>
+        <div class="field">
+            <div class="fields">
+                <div class="eight wide field">
+                    <label for="">Contraseña</label>
+                    <input type="password" name="" id="">
+                </div>
+                <div class="eight wide field">
+                    <label for="">Confirmar contraseña</label>
+                    <input type="password" name="" id="">
+                </div>
+            </div>
+        </div>
+        <div class="ui toggle checkbox">
+            <input type="checkbox" name="public">
+            <label>Acepto los terminos y condiciones</label>
+        </div>
+    </form>
+</div>
+<!-- Modul de persona >Juridica< -->
+<div id="juridica-form" style="display: none; margin-top: 15px;">
+    <form class="ui form">
+        <h4 class="ui dividing header">Información de Contacto</h4>
+        <div class="field">
+        <div class="fields">
+            <div class="nine wide field">
+                <label>Nombre completo</label>
+                <input type="text" name="shipping[first-name]" placeholder="Nombre Completo">
+            </div>
+            <div class="seven wide field">
+                <label>Numero de celular</label>
+                <input type="text" name="shipping[teléfono-cel]" placeholder="Telefono Celular">
+            </div>
+        </div>
+        <div class="field">
+            <label>Nit</label>
+            <input type="text" name="shipping[Nit]">
+        </div>
+        </div>
+        <div class="field">
+        <div class="fields">
+            <div class="five wide field">
+                <label>Departamento</label>
+                <select class="ui fluid dropdown">
+                    <option value="" disabled>Escoge un departamento</option>
+                    <option value="AMZ">Amazonas</option>
+                    <option value="ANT">Antioquia</option>
+                    <option value="ARA">Arauca</option>
+                    <option value="ATL">Atlántico</option>
+                    <option value="BOL">Bolívar</option>
+                    <option value="BOY">Boyacá</option>
+                    <option value="CAL">Caldas</option>
+                    <option value="CAQ">Caquetá</option>
+                    <option value="CAS">Casanare</option>
+                    <option value="CAU">Cauca</option>
+                    <option value="CES">Cesar</option>
+                    <option value="CHO">Chocó</option>
+                    <option value="COR">Córdoba</option>
+                    <option value="CUN">Cundinamarca</option>
+                    <option value="GUA">Guainía</option>
+                    <option value="GUV">Guaviare</option>
+                    <option value="HUI">Huila</option>
+                    <option value="GUA">Guajira</option>
+                    <option value="MAG">Magdalena</option>
+                    <option value="MET">Meta</option>
+                    <option value="NAR">Nariño</option>
+                    <option value="NDS">Norte de Santander</option>
+                    <option value="PUT">Putumayo</option>
+                    <option value="QUI">Quindío</option>
+                    <option value="RIS">Risaralda</option>
+                    <option value="SAP">San Andrés y Providencia</option>
+                    <option value="SAN">Santander</option>
+                    <option value="SUC">Sucre</option>
+                    <option value="TOL">Tolima</option>
+                    <option value="VAC">Valle del Cauca</option>
+                    <option value="VAU">Vaupés</option>
+                    <option value="VID">Vichada</option>              
+                </select>
+            </div>
+            <div class="eleven wide field">
+                <label>Dirección</label>
+                <input type="text" name="shipping[address]" placeholder="Dirección de la calle">
+            </div>
+        </div>
+        </div>
+        <div class="field">
+            <label>Correo electrónico</label>
+            <input type="email" name="shipping[email]">
+        </div>
+        <div class="field">
+            <div class="fields">
+                <div class="eight wide field">
+                    <label for="">Contraseña</label>
+                    <input type="password" name="" id="">
+                </div>
+                <div class="eight wide field">
+                    <label for="">Confirmar contraseña</label>
+                    <input type="password" name="" id="">
+                </div>
+            </div>
+        </div>
+        <div class="ui toggle checkbox">
+            <input type="checkbox" name="public">
+            <label>Acepto los terminos y condiciones</label>
+        </div>
+    </form>
+</div>

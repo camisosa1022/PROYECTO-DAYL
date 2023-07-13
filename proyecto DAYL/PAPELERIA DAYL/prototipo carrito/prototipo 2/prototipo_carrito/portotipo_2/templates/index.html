@@ -1,0 +1,31 @@
+{% extends 'layouts/base.html' %}
+{% load custom_filters %}
+{% block content %}
+    {% include "layouts/parcials/carrusel.html" %}
+
+    {% include "layouts/parcials/cards.html" %}
+    {% if request.session.carrito.items %}
+            {% for key, value in request.session.carrito.items %}
+            <ul class="ul-second">
+                
+                    <img src="{{value.imagen}}" >
+                
+                
+                    <li class="back">{{value.nombre}}</li>
+                
+                
+                    <li class="back">${{value.acumulado}}</li>
+                    <li class="back">${{value.cantidad}}</li>
+
+                   
+                
+            </ul>
+            {% endfor %}      
+        {% else %}
+                   
+            <li >Sin productos <br>              
+                
+        {% endif %}
+        <li>Total: ${{total_carrito}}</li>
+{% endblock  %}
+
