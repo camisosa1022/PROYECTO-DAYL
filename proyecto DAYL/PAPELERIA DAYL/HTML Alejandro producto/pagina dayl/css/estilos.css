@@ -10,7 +10,7 @@ body {
 }
 
 .footer {
-    background-color: #003cbd;
+    background-color: #87CEFA;
     padding: 12px;
     font-size: 1;
     position: relative;
@@ -808,3 +808,5 @@ header {
 .field-label {
     margin-right: 1em;
 }
+
+/* carrito de compras (vista general)*/
