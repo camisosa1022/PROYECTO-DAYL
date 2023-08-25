@@ -1,9 +1,0 @@
-{% extends "muestra.html" %}
-{% load static %}
-{% block head %}<link rel="stylesheet" href="{% static 'css/cat.css' %}">{% endblock head %}
-{% block title %}{% if subcategoria is not None %}{{ subcategoria}}
-{% else %}{{categoria}}{% endif %}{% endblock title %}
-{% block content %}
-<div class="contenedor"><h1>{% if subcategoria is not None %}{{subcategoria}}{% else %}{{categoria}}{% endif %}</h1></div>
-{% include "layouts/parcials/cards.html" %}
-{% endblock content %}
