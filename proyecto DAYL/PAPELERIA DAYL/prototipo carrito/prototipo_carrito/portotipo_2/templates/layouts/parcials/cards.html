@@ -1,0 +1,21 @@
+{% load static %}
+{% load custom_filters %}
+
+
+<div class="gallery" id="listacursos" >
+    <!-- Primer producto -->
+    {% for producto in productos  %}
+    <div class="content product-container " >
+        <img src="{{producto.imagen.url}}">
+        <h3>{% if producto.nombre|length > 16 %}
+        {{producto.nombre|slice:":16"}}...
+        {% else %}
+        {{producto.nombre}}
+        {% endif %}</h3>
+        <p>{{producto.descripcion}}</p>
+        <h6>${{producto.precio|floatformat:0}}</h6>
+        <button class="ui primary basic button agregar-carrito"  data-id="{{producto.id}}">agregar</button>
+        <a href="otra_pagina.html" class="buy-1">Ver Más</a>
+    </div>      
+    {% endfor %}
+</div>
