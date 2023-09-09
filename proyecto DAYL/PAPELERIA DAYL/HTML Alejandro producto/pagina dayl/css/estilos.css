@@ -986,16 +986,16 @@ header {
 }
 
 /*detalles de cuenta*/
-
-
-.container_detalles{
-    max-width: 1200px;
+.container_detalles {
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
     font-family: Montserrat !important;
+    height: 100vh; /* Establece la altura al 100% del viewport */
+    overflow-y: auto; /* Habilita el desplazamiento vertical cuando sea necesario */
 }
 
 .options {
@@ -1005,21 +1005,32 @@ header {
     font-family: Montserrat !important;
 }
 
+.options {
+    width: 200px;
+    background-color: #98c3ff;
+    padding: 15px;
+    font-family: Montserrat !important;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
 .options a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
-    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 3px;
     transition: background-color 0.3s ease;
     font-family: Montserrat !important;
 }
 
 .options a:hover {
-    background-color: #ddd;
+    background-color: #98c3ff;
     font-family: Montserrat !important;
 }
+
 
 .content {
     flex-grow: 1;
@@ -1091,13 +1102,18 @@ header {
     font-family: Montserrat !important;
 }
 
-.email-container .input-label {
-    display: inline-block; /* Hace que el texto y el enlace estén en la misma línea */
-    margin-right: 10px; /* Espacio entre el texto y el enlace */
+.email-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: Montserrat !important;
 }
 
-.email-container .editar-link {
+.email-header .editar-link {
+    font-family: Montserrat !important;
+}
+
+.email-input {
     margin-top: 10px;
     font-family: Montserrat !important;
 }
@@ -1109,8 +1125,15 @@ header {
 }
 
 /* Estilo para los campos de Contraseña */
+.password-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px; /* Espacio entre cada campo */
+    font-family: Montserrat !important;
+}
+
 .password-container input {
-    width: 30%; /* Ancho al 100% para que todos tengan el mismo ancho */
+    width: 30%; /* Ancho al 100% para ocupar el espacio disponible */
     font-family: Montserrat !important;
 }
 
