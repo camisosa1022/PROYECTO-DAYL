@@ -1,13 +1,13 @@
 body {
     background: #D4EEFF;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
     min-width: 560px !important;
 }
 
 /* estilos del footer*/
 .ui.container-footer {
     text-align: center;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .footer {
@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .footer img {
@@ -38,7 +38,7 @@ body {
     font-size: 15px;
     padding: 0.001%;
     align-items: center;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .whatsapp-icon {
@@ -55,7 +55,7 @@ body {
 
 .whatsapp-icon i {
     font-size: 30px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .footer .logo-container {
@@ -69,12 +69,12 @@ body {
 .footer h5 {
     font-weight: bold;
     text-align: center;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .footer a,
 .footer h5 {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .footer .contact-container {
@@ -85,7 +85,7 @@ body {
 
 .center-links {
     text-align: center;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /*estilos de los productos*/
@@ -104,7 +104,7 @@ div.content-productos.product-container h3 {
     text-align: center;
     margin: 0;
     padding: 10px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .gallery {
@@ -139,7 +139,7 @@ div.content-productos.product-container h3 {
 div.content-productos.product-container h3,
 div.content-productos.product-container p {
     overflow-wrap: break-word;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 div.content-productos.product-container img {
@@ -154,14 +154,14 @@ div.content-productos.product-container p {
     text-align: center;
     color: #000;
     padding-top: 0 8px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 div.content-productos.product-container h4 {
     text-align: center;
     color: #000;
     margin: 0;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 div.content-productos.product-container ul {
@@ -169,12 +169,12 @@ div.content-productos.product-container ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 div.content-productos.product-container li {
     padding-top: 5px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .buy-1 {
@@ -194,7 +194,7 @@ div.content-productos.product-container>a {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     display: block;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .product-container {
@@ -227,7 +227,7 @@ div.content-productos.product-container>a {
 
 .product-container h4 {
     height: 22px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .price-cart-container {
@@ -246,12 +246,12 @@ div.content-productos.product-container>a {
 @media (max-width: 350px) {
     div.content-productos.product-container h3 {
         font-size: 25px;
-        font-family: Montserrat !important;
+        font-family: 'Montserrat', sans-serif !important;
     }
 
     div.content-productos.product-container p {
         font-size: 20px;
-        font-family: Montserrat !important;
+        font-family: 'Montserrat', sans-serif !important;
     }
 }
 
@@ -275,7 +275,7 @@ div.content-productos.product-container>a {
     justify-content: center;
     align-items: center;
     position: relative;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .swiper-image {
@@ -426,12 +426,12 @@ header {
     cursor: pointer;
     padding: 1.2vw;
     transition: all .3s ease 0s;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .menu-container li:hover {
     background-color: #87CEEB;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .menu-container .develop {
@@ -454,17 +454,17 @@ header {
     text-align: center;
     background-color: #87CEEB;
     padding: 1vw;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .menu-container .ul-second>li:hover {
     background-color: #24252a;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .menu-container .develop:hover>.ul-second {
     display: block;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .menu-container .ul-third {
@@ -474,18 +474,18 @@ header {
     top: 40%;
     display: none;
     background-color: #24252a;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .menu-container .ul-third>li {
     padding: 1.5vw;
     border-bottom: solid 1px #fff;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .menu-container .front:hover>.ul-third {
     display: block;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .menu-container .cart-icon {
@@ -494,13 +494,13 @@ header {
 
 .menu-container a {
     color: #fff;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Estilos para el menú hamburguesa */
 .hamburger-menu {
     display: none;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .hamburger-menu .hamburger-icon {
@@ -526,18 +526,18 @@ header {
     color: #fff;
     padding: 0;
     margin: 0;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .hamburger-ul li {
     padding: 1.2vw;
     transition: all .3s ease 0s;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .hamburger-ul li:hover {
     background-color: #87CEEB;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 @media (max-width: 767px) {
@@ -551,7 +551,7 @@ header {
 
     .hamburger-menu {
         display: flex;
-        font-family: Montserrat !important;
+        font-family: 'Montserrat', sans-serif !important;
     }
 
     .hamburger-menu .hamburger-icon {
@@ -573,13 +573,13 @@ header {
         /* Ocupar todo el ancho disponible */
         padding: 1rem;
         /* Espaciado interno */
-        font-family: Montserrat !important;
+        font-family: 'Montserrat', sans-serif !important;
     }
 
     .hamburger-ul li {
         padding: 0.8rem;
         /* Ajuste del espaciado entre elementos */
-        font-family: Montserrat !important;
+        font-family: 'Montserrat', sans-serif !important;
     }
 
     .hamburger-icon,
@@ -596,12 +596,12 @@ header {
 
 .hamburger-ul .develop.active {
     background-color: #87CEEB;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .hamburger-ul .develop.active .ul-second {
     display: block;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 
@@ -654,14 +654,14 @@ header {
     flex-wrap: wrap;
     margin-left: 10px;
     /* Añade un margen izquierdo a las imágenes pequeñas */
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .other-images li {
     flex-basis: 33.33%;
     max-width: 33.33%;
     padding: 5px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .other-images img {
@@ -685,7 +685,7 @@ header {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
     /* Centra el texto del precio */
 }
 
@@ -699,7 +699,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin-top: 100px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .product0-container .column-ps {
@@ -740,7 +740,7 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-top: 5px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /*estilos responsive*/
@@ -751,29 +751,29 @@ header {
     .footer h5,
     .footer a {
         padding: 1%;
-        font-family: Montserrat !important;
+        font-family: 'Montserrat', sans-serif !important;
     }
 
     .footer {
         flex-direction: column;
-        font-family: Montserrat !important;
+        font-family: 'Montserrat', sans-serif !important;
     }
 
     .footer .logo-container {
         text-align: center;
-        font-family: Montserrat !important;
+        font-family: 'Montserrat', sans-serif !important;
     }
 
     .footer .terms-container {
         text-align: center;
-        font-family: Montserrat !important;
+        font-family: 'Montserrat', sans-serif !important;
     }
 
     .footer .contact-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-family: Montserrat !important;
+        font-family: 'Montserrat', sans-serif !important;
     }
 }
 
@@ -789,13 +789,13 @@ header {
 
     .other-images ul {
         margin-left: 0;
-        font-family: Montserrat !important;
+        font-family: 'Montserrat', sans-serif !important;
     }
 
     .other-images li {
         flex-basis: 100%;
         max-width: 100%;
-        font-family: Montserrat !important;
+        font-family: 'Montserrat', sans-serif !important;
     }
 
     .product0-container {
@@ -853,14 +853,14 @@ header {
     background-color: #ffffff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .subcat-container {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .subcat-name {
@@ -878,28 +878,28 @@ header {
 .breadcrumb {
     display: inline-block;
     margin-left: 10px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .breadcrumb a {
     margin-right: 10px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /*estilos de filtros*/
 .filtros {
     padding: 20px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .ui.form .field>.selection.dropdown {
     width: 20% !important;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .field-label {
     margin-right: 1em;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /*pasarela de pago*/
@@ -911,24 +911,24 @@ header {
     align-items: stretch;
     min-height: 100vh;
     background-color: #D4EEFF;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .form-container {
     width: 50%;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .ui.form {
     background-color: #D4EEFF;
     padding: 40px;
     height: 100%;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .ui.form .field {
     margin-bottom: 20px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /*configuracion_usua*/
@@ -937,7 +937,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 5vh;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
     /* Esto centra el contenido verticalmente en la pantalla */
 }
 
@@ -950,7 +950,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 20%;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .naranja {
@@ -993,7 +993,7 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
     height: 100vh; /* Establece la altura al 100% del viewport */
     overflow-y: auto; /* Habilita el desplazamiento vertical cuando sea necesario */
 }
@@ -1002,14 +1002,14 @@ header {
     width: 200px;
     background-color: #f0f0f0;
     padding: 20px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .options {
     width: 200px;
     background-color: #98c3ff;
     padding: 15px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
@@ -1023,12 +1023,12 @@ header {
     padding: 8px 12px;
     border-radius: 3px;
     transition: background-color 0.3s ease;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .options a:hover {
     background-color: #98c3ff;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 
@@ -1038,12 +1038,12 @@ header {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .content h2 {
     margin-top: 0;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Estilo para el input */
@@ -1054,7 +1054,7 @@ header {
     width: 100%;
     margin-top: 5px; /* Agregado margen superior */
     display: none;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Estilo para el enlace "Editar" */
@@ -1062,66 +1062,67 @@ header {
     cursor: pointer;
     color: #007bff;
     float: right; /* Alinea el enlace a la derecha */
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Estilo para centrar el enlace "Editar" verticalmente */
 .editar-container {
     display: flex;
-    align-items: center;font-family: Montserrat !important;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Estilo para los campos de entrada de Nombres y Apellidos */
 .input-container-detalles {
     display: flex;
     flex-direction: column;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .input-container-detalles input {
     width: 100%; /* Ancho al 100% para ocupar el espacio disponible */
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .input-label-detalles {
     font-weight: bold;
     margin-bottom: 5px; /* Espacio entre el texto y el campo de entrada */
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Estilo para el contenedor de Nombres y Apellidos */
 .nombre-apellido-container {
     display: flex;
     justify-content: space-between;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Estilo para el contenedor de Correo Electrónico */
 .email-container {
     margin-top: 20px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .email-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .email-header .editar-link {
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .email-input {
     margin-top: 10px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Estilo para el contenedor de Cambiar Contraseña */
 .cambiar-contrasena-container {
     margin-top: 20px;
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Estilo para los campos de Contraseña */
@@ -1129,29 +1130,29 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: 5px; /* Espacio entre cada campo */
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .password-container input {
     width: 30%; /* Ancho al 100% para ocupar el espacio disponible */
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Estilo para el contenedor del botón "Guardar Cambios" */
 .guardar-button-container {
     text-align: center; /* Centra el contenido horizontalmente */
     margin-top: 20px; /* Espacio superior */
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Estilo para el botón "Guardar Cambios" */
 .guardar-button {
     padding: 10px 20px; /* Ajusta el padding según tu preferencia */
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
     background-color: #5EA0FF !important;
     color: #fff;
 }
 
 .letra{
-    font-family: Montserrat !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
