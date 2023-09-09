@@ -1,16 +1,17 @@
 body {
     background: #D4EEFF;
-    font-family: Arial, sans-serif !important;
+    font-family: Montserrat !important;
     min-width: 560px !important;
 }
 
 /* estilos del footer*/
 .ui.container-footer {
     text-align: center;
+    font-family: Montserrat !important;
 }
 
 .footer {
-    background-color: #87CEFA;
+    background-color: #13afef;
     padding: 12px;
     font-size: 1;
     position: relative;
@@ -20,6 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: Montserrat !important;
 }
 
 .footer img {
@@ -36,6 +38,7 @@ body {
     font-size: 15px;
     padding: 0.001%;
     align-items: center;
+    font-family: Montserrat !important;
 }
 
 .whatsapp-icon {
@@ -52,6 +55,7 @@ body {
 
 .whatsapp-icon i {
     font-size: 30px;
+    font-family: Montserrat !important;
 }
 
 .footer .logo-container {
@@ -65,11 +69,12 @@ body {
 .footer h5 {
     font-weight: bold;
     text-align: center;
+    font-family: Montserrat !important;
 }
 
 .footer a,
 .footer h5 {
-    font-family: Arial, sans-serif;
+    font-family: Montserrat;
 }
 
 .footer .contact-container {
@@ -80,8 +85,8 @@ body {
 
 .center-links {
     text-align: center;
+    font-family: Montserrat !important;
 }
-
 
 /*estilos de los productos*/
 
@@ -99,6 +104,7 @@ div.content-productos.product-container h3 {
     text-align: center;
     margin: 0;
     padding: 10px;
+    font-family: Montserrat !important;
 }
 
 .gallery {
@@ -133,6 +139,7 @@ div.content-productos.product-container h3 {
 div.content-productos.product-container h3,
 div.content-productos.product-container p {
     overflow-wrap: break-word;
+    font-family: Montserrat !important;
 }
 
 div.content-productos.product-container img {
@@ -147,12 +154,14 @@ div.content-productos.product-container p {
     text-align: center;
     color: #000;
     padding-top: 0 8px;
+    font-family: Montserrat !important;
 }
 
 div.content-productos.product-container h4 {
     text-align: center;
     color: #000;
     margin: 0;
+    font-family: Montserrat !important;
 }
 
 div.content-productos.product-container ul {
@@ -160,10 +169,12 @@ div.content-productos.product-container ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Montserrat !important;
 }
 
 div.content-productos.product-container li {
     padding-top: 5px;
+    font-family: Montserrat !important;
 }
 
 .buy-1 {
@@ -183,6 +194,7 @@ div.content-productos.product-container>a {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     display: block;
+    font-family: Montserrat !important;
 }
 
 .product-container {
@@ -215,6 +227,7 @@ div.content-productos.product-container>a {
 
 .product-container h4 {
     height: 22px;
+    font-family: Montserrat !important;
 }
 
 .price-cart-container {
@@ -233,10 +246,12 @@ div.content-productos.product-container>a {
 @media (max-width: 350px) {
     div.content-productos.product-container h3 {
         font-size: 25px;
+        font-family: Montserrat !important;
     }
 
     div.content-productos.product-container p {
         font-size: 20px;
+        font-family: Montserrat !important;
     }
 }
 
@@ -260,6 +275,7 @@ div.content-productos.product-container>a {
     justify-content: center;
     align-items: center;
     position: relative;
+    font-family: Montserrat !important;
 }
 
 .swiper-image {
@@ -291,10 +307,39 @@ div.content-productos.product-container>a {
     color: #000;
 }
 
+/* Estilos personalizados para las flechas de navegación */
+.swiper-button-next,
+.swiper-button-prev {
+    top: 50%;
+    /* Alinea las flechas verticalmente en el centro */
+    transform: translateY(-50%);
+    /* Corrige la posición vertical */
+    width: 40px;
+    /* Ancho deseado de las flechas */
+    height: 40px;
+    /* Altura deseada de las flechas */
+    border-radius: 50%;
+    /* Hace que las flechas tengan forma circular */
+    color: #174af0;
+    /* Color del ícono de flecha */
+}
+
+/* Estilos para la flecha de navegación izquierda (anterior) */
+.swiper-button-prev {
+    left: 10px;
+    /* Alinea la flecha de navegación izquierda a la izquierda */
+}
+
+/* Estilos para la flecha de navegación derecha (siguiente) */
+.swiper-button-next {
+    right: 10px;
+    /* Alinea la flecha de navegación derecha a la derecha */
+}
+
 /* estilos del index */
 
 header {
-    background-color: #87CEEB;
+    background-color: #87CEFA;
 }
 
 .nav-superior {
@@ -321,8 +366,8 @@ header {
 }
 
 .nav-superior .user-buttons button {
-    color: #fff;
-    background-color: #87CEFA;
+    color: #fff !important;
+    background-color: #5EA0FF;
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -330,6 +375,10 @@ header {
     margin-left: 10px;
 }
 
+.nav-superior .user-buttons button > a {
+    color:#fff !important;
+
+}
 .nav-superior .search-bar {
     display: flex;
     align-items: center;
@@ -348,7 +397,7 @@ header {
 .nav-superior .search-bar button {
     margin-left: 10px;
     color: #fff;
-    background-color: #87CEFA;
+    background-color: #5EA0FF;
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -377,10 +426,12 @@ header {
     cursor: pointer;
     padding: 1.2vw;
     transition: all .3s ease 0s;
+    font-family: Montserrat !important;
 }
 
 .menu-container li:hover {
     background-color: #87CEEB;
+    font-family: Montserrat !important;
 }
 
 .menu-container .develop {
@@ -403,14 +454,17 @@ header {
     text-align: center;
     background-color: #87CEEB;
     padding: 1vw;
+    font-family: Montserrat !important;
 }
 
 .menu-container .ul-second>li:hover {
     background-color: #24252a;
+    font-family: Montserrat !important;
 }
 
 .menu-container .develop:hover>.ul-second {
     display: block;
+    font-family: Montserrat !important;
 }
 
 .menu-container .ul-third {
@@ -420,15 +474,18 @@ header {
     top: 40%;
     display: none;
     background-color: #24252a;
+    font-family: Montserrat !important;
 }
 
 .menu-container .ul-third>li {
     padding: 1.5vw;
     border-bottom: solid 1px #fff;
+    font-family: Montserrat !important;
 }
 
 .menu-container .front:hover>.ul-third {
     display: block;
+    font-family: Montserrat !important;
 }
 
 .menu-container .cart-icon {
@@ -437,11 +494,13 @@ header {
 
 .menu-container a {
     color: #fff;
+    font-family: Montserrat !important;
 }
 
 /* Estilos para el menú hamburguesa */
 .hamburger-menu {
     display: none;
+    font-family: Montserrat !important;
 }
 
 .hamburger-menu .hamburger-icon {
@@ -467,15 +526,18 @@ header {
     color: #fff;
     padding: 0;
     margin: 0;
+    font-family: Montserrat !important;
 }
 
 .hamburger-ul li {
     padding: 1.2vw;
     transition: all .3s ease 0s;
+    font-family: Montserrat !important;
 }
 
 .hamburger-ul li:hover {
     background-color: #87CEEB;
+    font-family: Montserrat !important;
 }
 
 @media (max-width: 767px) {
@@ -489,6 +551,7 @@ header {
 
     .hamburger-menu {
         display: flex;
+        font-family: Montserrat !important;
     }
 
     .hamburger-menu .hamburger-icon {
@@ -510,11 +573,13 @@ header {
         /* Ocupar todo el ancho disponible */
         padding: 1rem;
         /* Espaciado interno */
+        font-family: Montserrat !important;
     }
 
     .hamburger-ul li {
         padding: 0.8rem;
         /* Ajuste del espaciado entre elementos */
+        font-family: Montserrat !important;
     }
 
     .hamburger-icon,
@@ -531,10 +596,12 @@ header {
 
 .hamburger-ul .develop.active {
     background-color: #87CEEB;
+    font-family: Montserrat !important;
 }
 
 .hamburger-ul .develop.active .ul-second {
     display: block;
+    font-family: Montserrat !important;
 }
 
 
@@ -587,12 +654,14 @@ header {
     flex-wrap: wrap;
     margin-left: 10px;
     /* Añade un margen izquierdo a las imágenes pequeñas */
+    font-family: Montserrat !important;
 }
 
 .other-images li {
     flex-basis: 33.33%;
     max-width: 33.33%;
     padding: 5px;
+    font-family: Montserrat !important;
 }
 
 .other-images img {
@@ -616,6 +685,7 @@ header {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    font-family: Montserrat !important;
     /* Centra el texto del precio */
 }
 
@@ -629,7 +699,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin-top: 100px;
-    /* Espacio para el menú */
+    font-family: Montserrat !important;
 }
 
 .product0-container .column-ps {
@@ -670,6 +740,7 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-top: 5px;
+    font-family: Montserrat !important;
 }
 
 /*estilos responsive*/
@@ -680,24 +751,29 @@ header {
     .footer h5,
     .footer a {
         padding: 1%;
+        font-family: Montserrat !important;
     }
 
     .footer {
         flex-direction: column;
+        font-family: Montserrat !important;
     }
 
     .footer .logo-container {
         text-align: center;
+        font-family: Montserrat !important;
     }
 
     .footer .terms-container {
         text-align: center;
+        font-family: Montserrat !important;
     }
 
     .footer .contact-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-family: Montserrat !important;
     }
 }
 
@@ -713,11 +789,13 @@ header {
 
     .other-images ul {
         margin-left: 0;
+        font-family: Montserrat !important;
     }
 
     .other-images li {
         flex-basis: 100%;
         max-width: 100%;
+        font-family: Montserrat !important;
     }
 
     .product0-container {
@@ -747,14 +825,21 @@ header {
 
 /*carrusel*/
 @media (max-width: 760px) {
-    .swiper-button-next {
-        right: 20px;
-        transform: rotate(90deg);
-    }
 
+    .swiper-button-next,
     .swiper-button-prev {
-        left: 20px;
-        transform: rotate(90deg);
+        top: 50%;
+        /* Alinea las flechas verticalmente en el centro */
+        transform: translateY(-50%);
+        /* Corrige la posición vertical */
+        width: 40px;
+        /* Ancho deseado de las flechas */
+        height: 40px;
+        /* Altura deseada de las flechas */
+        border-radius: 50%;
+        /* Hace que las flechas tengan forma circular */
+        color: #174af0;
+        /* Color del ícono de flecha */
     }
 }
 
@@ -768,18 +853,21 @@ header {
     background-color: #ffffff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    font-family: Montserrat !important;
 }
 
 .subcat-container {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    font-family: Montserrat !important;
 }
 
 .subcat-name {
     flex: 1;
     font-size: 24px;
     font-weight: bold;
+    font-family: Montserrat !important;
 }
 
 .home-icon {
@@ -790,23 +878,257 @@ header {
 .breadcrumb {
     display: inline-block;
     margin-left: 10px;
+    font-family: Montserrat !important;
 }
 
 .breadcrumb a {
     margin-right: 10px;
+    font-family: Montserrat !important;
 }
 
 /*estilos de filtros*/
 .filtros {
     padding: 20px;
+    font-family: Montserrat !important;
 }
 
 .ui.form .field>.selection.dropdown {
     width: 20% !important;
+    font-family: Montserrat !important;
 }
 
 .field-label {
     margin-right: 1em;
+    font-family: Montserrat !important;
 }
 
-/* carrito de compras (vista general)*/
+/*pasarela de pago*/
+.body_p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 100vh;
+    background-color: #D4EEFF;
+    font-family: Montserrat !important;
+}
+
+.form-container {
+    width: 50%;
+    font-family: Montserrat !important;
+}
+
+.ui.form {
+    background-color: #D4EEFF;
+    padding: 40px;
+    height: 100%;
+    font-family: Montserrat !important;
+}
+
+.ui.form .field {
+    margin-bottom: 20px;
+    font-family: Montserrat !important;
+}
+
+/*configuracion_usua*/
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-family: Montserrat !important;
+    /* Esto centra el contenido verticalmente en la pantalla */
+}
+
+/*index_usua*/
+.circle-container {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+    font-family: Montserrat !important;
+}
+
+.naranja {
+    background-color: #FFA500;
+}
+
+.salmon {
+    background-color: #FA8072;
+}
+
+.dorado {
+    background-color: #FFD700;
+}
+
+.orquidea {
+    background-color: #DA70D6;
+}
+
+.acero-azul {
+    background-color: #50a2e4;
+}
+
+.azul-claro {
+    background-color: #7ac5de;
+}
+
+.morado-claro {
+    background-color: #aa8ee2;
+}
+
+.rosa-claro {
+    background-color: #FFB6C1;
+}
+
+/*detalles de cuenta*/
+
+
+.container_detalles{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: Montserrat !important;
+}
+
+.options {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    font-family: Montserrat !important;
+}
+
+.options a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Montserrat !important;
+}
+
+.options a:hover {
+    background-color: #ddd;
+    font-family: Montserrat !important;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    font-family: Montserrat !important;
+}
+
+.content h2 {
+    margin-top: 0;
+    font-family: Montserrat !important;
+}
+
+/* Estilo para el input */
+.custom-input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    margin-top: 5px; /* Agregado margen superior */
+    display: none;
+    font-family: Montserrat !important;
+}
+
+/* Estilo para el enlace "Editar" */
+.editar-link {
+    cursor: pointer;
+    color: #007bff;
+    float: right; /* Alinea el enlace a la derecha */
+    font-family: Montserrat !important;
+}
+
+/* Estilo para centrar el enlace "Editar" verticalmente */
+.editar-container {
+    display: flex;
+    align-items: center;font-family: Montserrat !important;
+}
+
+/* Estilo para los campos de entrada de Nombres y Apellidos */
+.input-container-detalles {
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat !important;
+}
+
+.input-container-detalles input {
+    width: 100%; /* Ancho al 100% para ocupar el espacio disponible */
+    font-family: Montserrat !important;
+}
+
+.input-label-detalles {
+    font-weight: bold;
+    margin-bottom: 5px; /* Espacio entre el texto y el campo de entrada */
+    font-family: Montserrat !important;
+}
+
+/* Estilo para el contenedor de Nombres y Apellidos */
+.nombre-apellido-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat !important;
+}
+
+/* Estilo para el contenedor de Correo Electrónico */
+.email-container {
+    margin-top: 20px;
+    font-family: Montserrat !important;
+}
+
+.email-container .input-label {
+    display: inline-block; /* Hace que el texto y el enlace estén en la misma línea */
+    margin-right: 10px; /* Espacio entre el texto y el enlace */
+    font-family: Montserrat !important;
+}
+
+.email-container .editar-link {
+    margin-top: 10px;
+    font-family: Montserrat !important;
+}
+
+/* Estilo para el contenedor de Cambiar Contraseña */
+.cambiar-contrasena-container {
+    margin-top: 20px;
+    font-family: Montserrat !important;
+}
+
+/* Estilo para los campos de Contraseña */
+.password-container input {
+    width: 30%; /* Ancho al 100% para que todos tengan el mismo ancho */
+    font-family: Montserrat !important;
+}
+
+/* Estilo para el contenedor del botón "Guardar Cambios" */
+.guardar-button-container {
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+    font-family: Montserrat !important;
+}
+
+/* Estilo para el botón "Guardar Cambios" */
+.guardar-button {
+    padding: 10px 20px; /* Ajusta el padding según tu preferencia */
+    font-family: Montserrat !important;
+    background-color: #5EA0FF !important;
+    color: #fff;
+}
+
+.letra{
+    font-family: Montserrat !important;
+}

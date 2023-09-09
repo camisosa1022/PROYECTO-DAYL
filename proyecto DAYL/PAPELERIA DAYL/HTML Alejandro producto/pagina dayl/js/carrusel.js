@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
       delay: 2000, // Intervalo de tiempo en milisegundos entre cada cambio de slide
       disableOnInteraction: false, // Permite retomar el autoplay después de interacciones manuales
     },
-    loop: true, // Agrega la opción de bucle
+    loop: false, // Desactiva la opción de bucle
     on: {
       resize: function () {
         swiper.changeDirection(getDirection());
@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       slideChange: function() {
         swiper.autoplay.start(); // Iniciar autoplay al cambiar de slide
+        swiper.update(); // Actualiza el carrusel después de cambiar de slide
       }
     },
   });

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie de Pagina</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/semantic.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/semantic.js"></script>
+</head>
+
+<body> 
+    <div class="container_detalles">
+        <div class="options">
+            <a class="option" data-tab="pedidos">Pedidos</a>
+            <a class="option" data-tab="descargas">Descargas</a>
+            <a class="option" data-tab="cuenta">Detalles de cuenta</a>
+        </div>
+        <div class="content">
+            <div class="tab-content" id="pedidos">
+                <h2>Información de Pedidos</h2>
+                <div class="ui styled fluid accordion">
+                    <div class="title" onclick="togglePedido('pedido-12345')">
+                        <i class="dropdown icon"></i>
+                        Pedido 12345
+                    </div>
+                    <div class="content" id="pedido-12345" style="display: none;">
+                        <p><strong class="letra">ID del Pedido:</strong> 12345</p>
+                        <p><strong class="letra">Fecha de Creación:</strong> 2023-09-08</p>
+                        <p><strong class="letra">Estado del Pedido:</strong> En proceso</p>
+                        <p><strong class="letra">Total del Pedido:</strong> $100.00</p>
+                        <a href="pagina_de_detalle.html" class="ui primary guardar-button" class="ver-detalles">Ver Detalles</a>
+                    </div>
+                    <div class="title" onclick="togglePedido('pedido-67890')">
+                        <i class="dropdown icon"></i>
+                        Pedido 67890
+                    </div>
+                    <div class="content" id="pedido-67890" style="display: none;">
+                        <p><strong class="letra">ID del Pedido:</strong> 67890</p>
+                        <p><strong class="letra">Fecha de Creación:</strong> 2023-09-10</p>
+                        <p><strong class="letra">Estado del Pedido:</strong> Entregado</p>
+                        <p><strong class="letra">Total del Pedido:</strong> $50.00</p>
+                        <a href="pagina_de_detalle.html" class="ui primary guardar-button">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="descargas">
+                <h2>Descargas</h2>
+                <a href="#" class="ui primary button guardar-button">Descargar archivo comprimido</a>
+            </div>
+            <div class="tab-content" id="cuenta">
+                <h2>Detalles de cuenta</h2>
+                <div class="nombre-apellido-container">
+                    <div class="input-container-detalles">
+                        <p class="input-label-detalles"><strong class="letra">Nombres</strong></p>
+                        <input type="text" class="custom-input" id="inputNombres" placeholder="Nuevos nombres"
+                            style="display: none;">
+                    </div>
+                    <div class="input-container-detalles
+                        <p class=" input-label-detalles"><strong class="letra">Apellidos</strong></p>
+                        <input type="text" class="custom-input" id="inputApellidos" placeholder="Nuevos apellidos"
+                            style="display: none;">
+                    </div>
+                    <div class="editar-container">
+                        <span class="editar-link" onclick="mostrarInputNombresApellidos()">Editar</span>
+                    </div>
+                </div>
+                <div class="email-container">
+                    <p class="input-label-detalles"><strong class="letra">Correo Electrónico:</strong></p>
+                    <a class="editar-link" onclick="mostrarInputCorreo()">Editar</a>
+                    <input type="email" class="custom-input" id="inputCorreo" placeholder="Nuevo correo electrónico"
+                        style="display: none;">
+                </div>
+                <div class="cambiar-contrasena-container">
+                    <p class="input-label-detalles"><strong class="letra">Cambiar Contraseña:</strong></p>
+                    <a class="editar-link" onclick="mostrarInputContrasena()">Editar</a>
+                    <div class="input-container-detalles password-container">
+                        <p class="input-label-detalles">Contraseña Actual:</p>
+                        <input type="password" class="custom-input" id="inputContrasenaActual"
+                            placeholder="Contraseña actual" style="display: none;">
+                    </div>
+                    <div class="input-container-detalles password-container">
+                        <p class="input-label-detalles">Contraseña Nueva:</p>
+                        <input type="password" class="custom-input" id="inputContrasenaNueva"
+                            placeholder="Contraseña nueva" style="display: none;">
+                    </div>
+                    <div class="input-container-detalles password-container">
+                        <p class="input-label-detalles">Confirmación de Contraseña:</p>
+                        <input type="password" class="custom-input" id="inputConfirmacionContrasena"
+                            placeholder="Confirmación de contraseña" style="display: none;">
+                    </div>
+                </div>
+                <div class="guardar-button-container">
+                    <button class="ui primary button guardar-button" class="color-botones" onclick="guardarCambios()">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.2/semantic.min.js"></script>
+    <script>
+        function togglePedido(pedidoId) {
+            var contenidoPedido = $('#' + pedidoId);
+            contenidoPedido.slideToggle();
+        }
+
+        function mostrarInputNombresApellidos() {
+            $('#inputNombres').toggle();
+            $('#inputApellidos').toggle();
+        }
+
+        function mostrarInputCorreo() {
+            $('#inputCorreo').toggle();
+        }
+
+        function mostrarInputContrasena() {
+            $('#inputContrasenaActual').toggle();
+            $('#inputContrasenaNueva').toggle();
+            $('#inputConfirmacionContrasena').toggle();
+        }
+
+        function guardarCambios() {
+            // Aquí puedes agregar el código para guardar los cambios en la configuración
+            alert("Cambios guardados exitosamente"); // Ejemplo de mensaje de alerta
+        }
+
+        $(document).ready(function () {
+            function cargarPedidos() {
+                $('.tab-content').hide();
+                $('#pedidos').show();
+            }
+
+            cargarPedidos();
+
+            $('.option').click(function (e) {
+                e.preventDefault();
+                var tabId = $(this).data('tab');
+                $('.tab-content').hide();
+                $('#' + tabId).show();
+            });
+
+            $('.ui.accordion').accordion();
+        });
+    </script>
+</body>
+
+</html>
