@@ -540,60 +540,6 @@ header {
     font-family: 'Montserrat', sans-serif !important;
 }
 
-@media (max-width: 767px) {
-    .menu-container .cont-ul {
-        display: none;
-    }
-
-    .menu-container .cart-icon {
-        font-size: 1.2rem !important;
-    }
-
-    .hamburger-menu {
-        display: flex;
-        font-family: 'Montserrat', sans-serif !important;
-    }
-
-    .hamburger-menu .hamburger-icon {
-        display: flex;
-    }
-
-    .hamburger-ul {
-        display: flex;
-        justify-content: center;
-        background-color: #87CEEB;
-        /* Nuevo fondo para el menú hamburguesa */
-        position: absolute;
-        /* Ajuste de posición para que el menú se superponga al contenido */
-        top: 100%;
-        /* Posición relativa al elemento padre */
-        left: 0;
-        /* Posición relativa al elemento padre */
-        width: 100%;
-        /* Ocupar todo el ancho disponible */
-        padding: 1rem;
-        /* Espaciado interno */
-        font-family: 'Montserrat', sans-serif !important;
-    }
-
-    .hamburger-ul li {
-        padding: 0.8rem;
-        /* Ajuste del espaciado entre elementos */
-        font-family: 'Montserrat', sans-serif !important;
-    }
-
-    .hamburger-icon,
-    .cart-icon-container {
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .hamburger-icon {
-        margin-right: 10px;
-        /* Ajusta el margen derecho según tus necesidades */
-    }
-}
-
 .hamburger-ul .develop.active {
     background-color: #87CEEB;
     font-family: 'Montserrat', sans-serif !important;
