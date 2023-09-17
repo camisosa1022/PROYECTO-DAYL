@@ -1,0 +1,254 @@
+/*pasarela de pago*/
+.body_p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 100vh;
+    background-color: #D4EEFF;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.form-container {
+    width: 50%;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.ui.form {
+    background-color: #D4EEFF;
+    padding: 40px;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.ui.form .field {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/*configuracion_usua*/
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-family: 'Montserrat', sans-serif !important;
+    /* Esto centra el contenido verticalmente en la pantalla */
+}
+
+/*index_usua*/
+.circle-container {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.naranja {
+    background-color: #FFA500;
+}
+
+.salmon {
+    background-color: #FA8072;
+}
+
+.dorado {
+    background-color: #FFD700;
+}
+
+.orquidea {
+    background-color: #DA70D6;
+}
+
+.acero-azul {
+    background-color: #50a2e4;
+}
+
+.azul-claro {
+    background-color: #7ac5de;
+}
+
+.morado-claro {
+    background-color: #aa8ee2;
+}
+
+.rosa-claro {
+    background-color: #FFB6C1;
+}
+
+/*detalles de cuenta*/
+.container_detalles {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+    height: 100vh; /* Establece la altura al 100% del viewport */
+    overflow-y: auto; /* Habilita el desplazamiento vertical cuando sea necesario */
+}
+
+.options {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.options {
+    width: 200px;
+    background-color: #98c3ff;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif !important;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.options a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.options a:hover {
+    background-color: #98c3ff;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+.content {
+    flex-grow: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.content h2 {
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Estilo para el input */
+.custom-input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    margin-top: 5px; /* Agregado margen superior */
+    display: none;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Estilo para el enlace "Editar" */
+.editar-link {
+    cursor: pointer;
+    color: #007bff;
+    float: right; /* Alinea el enlace a la derecha */
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Estilo para centrar el enlace "Editar" verticalmente */
+.editar-container {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Estilo para los campos de entrada de Nombres y Apellidos */
+.input-container-detalles {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.input-container-detalles input {
+    width: 100%; /* Ancho al 100% para ocupar el espacio disponible */
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.input-label-detalles {
+    font-weight: bold;
+    margin-bottom: 5px; /* Espacio entre el texto y el campo de entrada */
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Estilo para el contenedor de Nombres y Apellidos */
+.nombre-apellido-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Estilo para el contenedor de Correo Electrónico */
+.email-container {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.email-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.email-header .editar-link {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.email-input {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Estilo para el contenedor de Cambiar Contraseña */
+.cambiar-contrasena-container {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Estilo para los campos de Contraseña */
+.password-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px; /* Espacio entre cada campo */
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.password-container input {
+    width: 30%; /* Ancho al 100% para ocupar el espacio disponible */
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Estilo para el contenedor del botón "Guardar Cambios" */
+.guardar-button-container {
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Estilo para el botón "Guardar Cambios" */
+.guardar-button {
+    padding: 10px 20px; /* Ajusta el padding según tu preferencia */
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #5EA0FF !important;
+    color: #fff;
+}
+
+.letra{
+    font-family: 'Montserrat', sans-serif !important;
+}

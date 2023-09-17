@@ -1,0 +1,68 @@
+/* estilos del index */
+
+header {
+    background-color: #87CEFA;
+}
+
+.nav-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.nav-superior .logo img {
+    width: 120px;
+    height: 60px;
+}
+
+.nav-superior .busc-btn {
+    display: flex;
+    align-items: center;
+}
+
+.nav-superior .user-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-superior .user-buttons button {
+    color: #fff !important;
+    background-color: #5EA0FF;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.nav-superior .user-buttons button > a {
+    color:#fff !important;
+
+}
+.nav-superior .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.nav-superior .search-bar input {
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.nav-superior .search-bar button {
+    margin-left: 10px;
+    color: #fff;
+    background-color: #5EA0FF;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
