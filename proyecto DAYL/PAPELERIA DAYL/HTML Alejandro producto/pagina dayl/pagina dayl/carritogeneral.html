@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="css/carritogeneral.css">
+</head>
+
+<body>
+    <div class="ui container carrito">
+        <h1 class="titulo">Carrito de Compras</h1>
+        <div class="ui stackable grid">
+            <div class="ten wide column">
+                <table class="ui unstackable celled table product-table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="ui items">
+                                    <div class="item">
+                                        <div class="ui small image">
+                                            <img class="img carrito" src="img/banderin.jpg" alt="Producto">
+                                        </div>
+                                        <div class="middle aligned content">
+                                            <p>Nombre del Producto</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="product-price">$10.000</td>
+                            <td class="quantity">
+                                <div class="ui action input">
+                                    <button class="ui icon button decrease-btn" onclick="updateQuantity(this, -1)"><i class="minus icon"></i></button>
+                                    <input type="number" class="ui input focus" id="quantity-input" min="0" value="0" oninput="updateSubtotal(this)">
+                                    <button class="ui icon button increase-btn" onclick="updateQuantity(this, 1)"><i class="plus icon"></i></button>
+                                </div>
+                            </td>
+                            <td class="product-subtotal">$0.000</td>
+                        </tr>
+                        <!-- Agrega más filas para más productos -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="4">
+                                <div class="update-button-carrito">
+                                    <button class="ui primary button" onclick="updateCart()">Actualizar Carrito</button>
+                                </div>
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="sixteen wide column">
+                <table class="ui unstackable celled table summary-table">
+                    <tbody>
+                        <tr>
+                            <td class="total-carrito" colspan="3">TOTAL CARRITO DE COMPRAS</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: left;">SUBTOTAL:</td>
+                            <td class="subtotal-value">$0.000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: left;">IVA:</td>
+                            <td class="shipping-value">$0.000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: left;">TOTAL:</td>
+                            <td class="total-value">$0.000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="text-align: center;">
+                                <div class="finish-button">
+                                    <button class="ui primary button" style="width: 60%; margin: 0 auto;">Finalizar Compra</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/carritogeneral.js"></script>
+</body>
+
+</html>

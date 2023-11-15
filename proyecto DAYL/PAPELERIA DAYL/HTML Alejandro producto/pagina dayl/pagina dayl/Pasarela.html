@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasarela de Pagos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/semantic.css">
+</head>
+
+<body class="body_p">
+    <div class="form-container">
+        <form class="ui form">
+            <h2 class="ui header">Pago Seguro</h2>
+            <hr>
+            <div class="field">
+                <div class="two fields">
+                    <div class="field">
+                        <label>Nombre</label>
+                        <input type="text" name="shipping[Nombre]" placeholder="Nombre" required>
+                    </div>
+                    <div class="field">
+                        <label for="">Apellido</label>
+                        <input type="text" name="shipping[Apellido]" placeholder="Apellido" required>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Nombre de la empresa (Opcional)</label>
+                <input type="text" name="Emprenombre" placeholder="Nombre de la empresa">
+            </div>
+            <div class="field">
+                <div class="field">
+                    <label>Pais/Region*</label>
+                    <label for="">COLOMBIA*</label>
+                </div>
+            </div>
+            <div class="three fields">
+                <div class="field">
+                    <label>Calle</label>
+                    <input type="text" name="Calle" placeholder="Calle" required>
+                </div>
+                <div class="field">
+                    <label>Carrera</label>
+                    <input type="text" name="Carrera" placeholder="Carrera" required>
+                </div>
+                <div class="field">
+                    <label>Número de la calle</label>
+                    <input type="text" name="numerocalle" placeholder="Número de la calle" required>
+                </div>
+            </div>
+            <div class="field">
+                <input type="text" name="Apartamento" placeholder="Apartamento, habitacio, etc. (Opcional)">
+            </div>
+            <div class="field">
+                <label>Localidad/Ciudad</label>
+                <input type="text" name="Localidad" placeholder="Localidad/Ciudad" required>
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    <label>Telefono</label>
+                    <input type="text" name="Telefono" placeholder="Telefono" required>
+                </div>
+                <div class="field">
+                    <label>Numero de Tarjeta</label>
+                    <div>
+                        <input type="text" name="N°Tarjeta" placeholder="Numero de Tarjeta" required>
+                    </div>
+                </div>
+            </div>
+            <div class="fields">
+                <div class="eight wide field">
+                    <label>Fecha de Expiración</label>
+                    <input type="date" name="expiration" placeholder="MM/AA" required>
+                </div>
+                <div class="eight wide field">
+                    <label>CVV</label>
+                    <input type="text" name="cvv" placeholder="CVV" required pattern="\d{3}"
+                        title="El CVV debe tener 3 números">
+                </div>
+            </div>
+            <div class="field">
+                <label>Método de Pago</label>
+                <select class="ui dropdown" name="paymentMethod" required>
+                    <option value="" disabled selected>Selecciona tu Metodo de Pago</option>
+                    <option value="credit">Tarjeta de Crédito</option>
+                    <option value="debit">Tarjeta de Débito</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </div>
+
+
+            <div class="ui checkbox">
+                <input type="checkbox" name="Direcciondeiferente" id="toggleCheckbox"
+                    onchange="toggleSecondFormVisibility('toggleCheckbox')">
+                <label class="ui checkbox">
+                    <h4>¿ENVIAR A UNA DIRECCION DIFERENTE?</h4>
+                </label>
+            </div>
+
+
+            <div class="form container">
+                <div class="ui form">
+                    <div id="secondFormContent" style="display: none;">
+                        <div class="field">
+                            <label>Nombre y Apellido</label>
+                            <div class="two fields">
+                                <div class="field">
+                                    <input type="text" name="shipping[Nombre]" placeholder="Nombre" required>
+                                </div>
+                                <div class="field">
+                                    <input type="text" name="shipping[Apellido]" placeholder="Apellido" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Nombre de la empresa (Opcional)</label>
+                            <input type="text" name="Emprenombre" placeholder="Nombre de la empresa">
+                        </div>
+                        <div class="field">
+                            <div class="field">
+                                <label>Pais/Region*</label>
+                                <label for="">COLOMBIA*</label>
+                            </div>
+                        </div>
+                        <div class="three fields">
+                            <div class="field">
+                                <label>Calle</label>
+                                <input type="text" name="Calle" placeholder="Calle" required>
+                            </div>
+                            <div class="field">
+                                <label>Carrera</label>
+                                <input type="text" name="Carrera" placeholder="Carrera" required>
+                            </div>
+                            <div class="field">
+                                <label>Número de la calle</label>
+                                <input type="text" name="numerocalle" placeholder="Número de la calle" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="Apartamento" placeholder="Apartamento, habitacio, etc. (Opcional)">
+                        </div>
+                        <div class="field">
+                            <label>Localidad/Ciudad</label>
+                            <input type="text" name="Localidad" placeholder="Localidad/Ciudad" required>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                  <button class="ui black button" type="submit">Realizar Pedido</button>  
+                </div>
+                 
+            </div>
+           
+        </form>
+        
+    </div>
+
+    </div>
+    <div class="form-container">
+        <form class="ui form">
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Tabla de Productos</title>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+                <style>
+                    body {
+                        background-color: #D4EEFF;
+                    }
+
+                    .table-container {
+                        width: 50%;
+                        margin: auto;
+                        margin-top: 20px;
+                    }
+                </style>
+            </head>
+
+            <body>
+                <div class="ui container table-container">
+                    <h2 class="ui header">Detalle de Productos</h2>
+                    <hr>
+                    <label for="">Tu Pedido</label>
+                    <table class="ui celled table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Producto 1</td>
+                                <td>2</td>
+                                <td>$50.00</td>
+                            </tr>
+                            <tr>
+                                <td>Producto 2</td>
+                                <td>1</td>
+                                <td>$30.00</td>
+                            </tr>
+                            <tr>
+                                <td>Producto 3</td>
+                                <td>3</td>
+                                <td>$20.00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Total:</td>
+                                <td>$100.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </body>
+
+            </html>
+        </form>
+    </div>
+    <script src="js/pasarela_pago.js"></script>
+</body>
+
+</html>

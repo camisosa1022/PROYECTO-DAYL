@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie de Pagina</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/semantic.css">
+    <link rel="stylesheet" href="css/otroscss.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/semantic.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container_detalles">
+        <div class="options">
+            <a class="option" data-tab="pedidos">Pedidos</a>
+            <a class="option" data-tab="descargas">Descargas</a>
+            <a class="option" data-tab="cuenta">Detalles de cuenta</a>
+        </div>
+        <div class="content">
+            <div class="tab-content" id="pedidos">
+                <h2>Información de Pedidos</h2>
+                <div class="ui styled fluid accordion">
+                    <div class="title" onclick="togglePedido('pedido-12345')">
+                        <i class="dropdown icon"></i>
+                        Pedido 12345
+                    </div>
+                    <div class="content" id="pedido-12345" style="display: none;">
+                        <p class="letra">ID del Pedido: 12345</p>
+                        <p class="letra">Fecha de Creación: 2023-09-08</p>
+                        <p class="letra">Estado del Pedido: En proceso</p>
+                        <p class="letra">Total del Pedido: $100.00</p>
+                        <a href="pagina_de_detalle.html" class="ui primary guardar-button" class="ver-detalles">Ver
+                            Detalles</a>
+                    </div>
+                    <div class="title" onclick="togglePedido('pedido-67890')">
+                        <i class="dropdown icon"></i>
+                        Pedido 67890
+                    </div>
+                    <div class="content" id="pedido-67890" style="display: none;">
+                        <p class="letra">ID del Pedido: 67890</p>
+                        <p class="letra">Fecha de Creación: 2023-09-10</p>
+                        <p class="letra">Estado del Pedido: Entregado</p>
+                        <p class="letra">Total del Pedido: $50.00</p>
+                        <a href="pagina_de_detalle.html" class="ui primary guardar-button">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="descargas">
+                <h2 class="letra">Descargas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID Factura</th>
+                            <th>Fecha de Facturación</th>
+                            <th>Fecha de Vencimiento</th>
+                            <th>Imprimir Factura</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="ID Factura">1</td>
+                            <td data-label="Fecha de Facturación">2023-09-09</td>
+                            <td data-label="Fecha de Vencimiento">2023-09-19</td>
+                            <td data-label="Imprimir" class="center aligned"><a href="ruta_del_archivo.pdf" target="_blank"><i class="print icon"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-content" id="cuenta">
+                <h2 class="letra">Detalles de cuenta</h2>
+                <div class="nombre-apellido-container">
+                    <div class="input-container-detalles">
+                        <p class="letra">Nombre </p>
+                        <input type="text" class="custom-input" id="inputNombres" placeholder="Nombre"
+                            style="display: none;">
+                    </div>
+                    <div class="input-container-detalles">
+                        <p class="letra">Apellidos</p>
+                        <input type="text" class="custom-input" id="inputApellidos" placeholder="Apellidos"
+                            style="display: none;">
+                    </div>
+                    <div class="editar-container">
+                        <span class="editar-link" onclick="mostrarInputNombresApellidos()" class="letra">Editar</span>
+                    </div>
+                </div>
+                <div class="email-container">
+                    <div class="email-header">
+                        <p class="letra">Correo Electrónico:</p>
+                        <a class="editar-link" onclick="mostrarInputCorreo()" class="letra">Editar</a>
+                    </div>
+                    <div class="email-input">
+                        <input type="email" class="custom-input" id="inputCorreo" placeholder="Nuevo correo electrónico"
+                            style="display: none;">
+                    </div>
+                </div>
+                <div class="cambiar-contrasena-container">
+                    <p class="letra">Cambiar Contraseña:</p>
+                    <a class="editar-link" onclick="mostrarInputContrasena()" class="letra">Editar</a>
+                    <div class="input-container-detalles password-container">
+                        <p class="letra">Contraseña Actual</p>
+                        <input type="password" class="custom-input" id="inputContrasenaActual"
+                            placeholder="Contraseña actual" style="display: none;">
+                    </div>
+                    <div class="input-container-detalles password-container">
+                        <p class="letra">Contraseña Nueva</p>
+                        <input type="password" class="custom-input" id="inputContrasenaNueva"
+                            placeholder="Contraseña nueva" style="display: none;">
+                    </div>
+                    <div class="input-container-detalles password-container">
+                        <p class="letra">Confirmación de Contraseña</p>
+                        <input type="password" class="custom-input" id="inputConfirmacionContrasena"
+                            placeholder="Confirmación de contraseña" style="display: none;">
+                    </div>
+                </div>
+                <div class="guardar-button-container">
+                    <button class="ui primary button guardar-button" class="color-botones" onclick="guardarCambios()"
+                        class="letra">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.2/semantic.min.js"></script>
+    <script src="js/configuracion_usua.js"></script>
+
+</body>
+
+</html>
