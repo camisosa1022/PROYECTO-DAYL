@@ -851,6 +851,7 @@ header {
 /*pasarela de pago*/
 .body_p {
     margin: 0;
+    margin-top: 80px !important;
     padding: 0;
     display: flex;
     justify-content: space-between;
