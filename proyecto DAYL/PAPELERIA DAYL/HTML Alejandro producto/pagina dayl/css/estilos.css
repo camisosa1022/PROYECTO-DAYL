@@ -954,10 +954,10 @@ header {
 
 .options {
     width: 200px;
-    background-color: #98c3ff;
+    background-color: #87CEFA !important; /*añadido el 17/noviembre es el mismo color del footer*/
     padding: 15px;
     font-family: 'Montserrat', sans-serif !important;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -982,7 +982,7 @@ header {
 .content {
     flex-grow: 1;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     font-family: 'Montserrat', sans-serif !important;
@@ -1103,6 +1103,206 @@ header {
 .letra{
     font-family: 'Montserrat', sans-serif !important;
 }
+
+
+
+
+/* Estilos generales */
+.container_detalles {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.options, .content {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.options {
+    width: 200px; /* Ajusta el ancho según sea necesario */
+    background-color: #98c3ff;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.options a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.options a:hover {
+    background-color: #98c3ff;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+/* Estilo para el input */
+.custom-input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Estilo para el enlace "Editar" */
+.editar-link {
+    cursor: pointer;
+    color: #007bff;
+    float: right;
+}
+
+/* Estilo para centrar el enlace "Editar" verticalmente */
+.editar-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para los campos de entrada de Nombres y Apellidos */
+.input-container-detalles {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container-detalles input {
+    width: 100%;
+}
+
+.input-label-detalles {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo para el contenedor de Nombres y Apellidos */
+.nombre-apellido-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo para el contenedor de Correo Electrónico */
+.email-container {
+    margin-top: 20px;
+}
+
+.email-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-header .editar-link {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.email-input {
+    margin-top: 10px;
+}
+
+/* Estilo para el contenedor de Cambiar Contraseña */
+.cambiar-contrasena-container {
+    margin-top: 20px;
+}
+
+/* Estilo para los campos de Contraseña */
+.password-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.password-container input {
+    width: 45%;
+}
+
+/* Estilo para el contenedor del botón "Guardar Cambios" */
+.guardar-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para el botón "Guardar Cambios" */
+.guardar-button {
+    padding: 10px 20px;
+    background-color: #5EA0FF !important;
+    color: #fff;
+}
+
+.letra {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+
+/* Media Query para pantallas más pequeñas */
+/* Media Query para pantallas más pequeñas */
+@media only screen and (max-width: 500px) {
+    .container_detalles {
+        flex-direction: column;
+    }
+
+    .options, .content {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .options {
+        padding: 15px;
+        border-radius: 3px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+    }
+
+    .pedido-detalle-container,
+    .cuenta-detalle-container,
+    .descargas-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px; /* Ajusta según sea necesario */
+    }
+
+    .email-container,
+    .cambiar-contrasena-container {
+        margin-top: 10px;
+    }
+
+    .custom-input,
+    .password-container input {
+        width: 100%;
+    }
+
+    .guardar-button-container {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
 
 /*Dropdown carrito*/
 .dropdown-content {
