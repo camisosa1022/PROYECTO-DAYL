@@ -1,7 +1,10 @@
-body {
-    background: #D4EEFF;
-    font-family: 'Montserrat', sans-serif !important;
-    min-width: 560px !important;
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat.ttf') format('truetype');
+  }
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url('fonts/Montserrat-Bold.ttf') format('truetype');
 }
 
 /* estilos del footer*/
@@ -55,7 +58,6 @@ body {
 
 .whatsapp-icon i {
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif !important;
 }
 
 .footer .logo-container {
@@ -253,6 +255,15 @@ div.content-productos.product-container>a {
         font-size: 20px;
         font-family: 'Montserrat', sans-serif !important;
     }
+    .product-container p{
+        height: auto!important;
+        margin-bottom: 10px!important;
+    }
+
+    .shopping.cart.icon{
+        font-size: 18px!important;
+    }
+
 }
 
 /* estilos del carrusel*/
@@ -497,59 +508,16 @@ header {
     font-family: 'Montserrat', sans-serif !important;
 }
 
-/* Estilos para el menú hamburguesa */
-.hamburger-menu {
+
+@media (max-width:700px) {
+    div.menu-container{
+        display: none;
+    }
+    .ocultar{
     display: none;
-    font-family: 'Montserrat', sans-serif !important;
+    }
 }
-
-.hamburger-menu .hamburger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
-    height: 18px;
-    cursor: pointer;
-}
-
-.hamburger-menu .bar {
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-}
-
-.hamburger-ul {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    color: #fff;
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif !important;
-}
-
-.hamburger-ul li {
-    padding: 1.2vw;
-    transition: all .3s ease 0s;
-    font-family: 'Montserrat', sans-serif !important;
-}
-
-.hamburger-ul li:hover {
-    background-color: #87CEEB;
-    font-family: 'Montserrat', sans-serif !important;
-}
-
-.hamburger-ul .develop.active {
-    background-color: #87CEEB;
-    font-family: 'Montserrat', sans-serif !important;
-}
-
-.hamburger-ul .develop.active .ul-second {
-    display: block;
-    font-family: 'Montserrat', sans-serif !important;
-}
-
+/* Fin del menu hamburguesa */
 
 /*estilos productos_solictarios*/
 
@@ -692,7 +660,7 @@ header {
 /*estilos responsive*/
 
 /*footer*/
-@media (max-width: 500px) {
+@media (max-width: 1088px) {
 
     .footer h5,
     .footer a {
@@ -807,6 +775,7 @@ header {
     align-items: center;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif !important;
+    margin-top: 50px;/*anexe esto para que se ueda ver la ruta */
 }
 
 .subcat-name {
@@ -851,7 +820,7 @@ header {
 /*pasarela de pago*/
 .body_p {
     margin: 0;
-    margin-top: 80px !important;
+    margin-top: 40px !important;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -859,6 +828,7 @@ header {
     min-height: 100vh;
     background-color: #D4EEFF;
     font-family: 'Montserrat', sans-serif !important;
+    z-index: 10;
 }
 
 .form-container {
@@ -867,7 +837,7 @@ header {
 }
 
 .ui.form {
-    background-color: #D4EEFF;
+    background-color: #f1f1f1;
     padding: 40px;
     height: 100%;
     font-family: 'Montserrat', sans-serif !important;
@@ -954,10 +924,10 @@ header {
 
 .options {
     width: 200px;
-    background-color: #87CEFA !important; /*añadido el 17/noviembre es el mismo color del footer*/
+    background-color: #98c3ff;
     padding: 15px;
     font-family: 'Montserrat', sans-serif !important;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -982,7 +952,7 @@ header {
 .content {
     flex-grow: 1;
     background-color: #fff;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     font-family: 'Montserrat', sans-serif !important;
@@ -1103,206 +1073,9 @@ header {
 .letra{
     font-family: 'Montserrat', sans-serif !important;
 }
-
-
-
-
-/* Estilos generales */
-.container_detalles {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 20px;
-    font-family: 'Montserrat', sans-serif !important;
-    height: 100vh;
-    overflow-y: auto;
+.letra-bold{
+    font-family: 'Montserrat-Bold', sans-serif !important;
 }
-
-.options, .content {
-    font-family: 'Montserrat', sans-serif !important;
-}
-
-.options {
-    width: 200px; /* Ajusta el ancho según sea necesario */
-    background-color: #98c3ff;
-    padding: 15px;
-    border-radius: 3px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.options a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-    padding: 8px 12px;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
-}
-
-.options a:hover {
-    background-color: #98c3ff;
-}
-
-.content {
-    flex-grow: 1;
-    background-color: #fff;
-    border-radius: 3px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-}
-
-.content h2 {
-    margin-top: 0;
-}
-
-/* Estilo para el input */
-.custom-input {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 8px;
-    width: 100%;
-    margin-top: 5px;
-    font-family: 'Montserrat', sans-serif !important;
-}
-
-/* Estilo para el enlace "Editar" */
-.editar-link {
-    cursor: pointer;
-    color: #007bff;
-    float: right;
-}
-
-/* Estilo para centrar el enlace "Editar" verticalmente */
-.editar-container {
-    display: flex;
-    align-items: center;
-}
-
-/* Estilo para los campos de entrada de Nombres y Apellidos */
-.input-container-detalles {
-    display: flex;
-    flex-direction: column;
-}
-
-.input-container-detalles input {
-    width: 100%;
-}
-
-.input-label-detalles {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-/* Estilo para el contenedor de Nombres y Apellidos */
-.nombre-apellido-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Estilo para el contenedor de Correo Electrónico */
-.email-container {
-    margin-top: 20px;
-}
-
-.email-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.email-header .editar-link {
-    font-family: 'Montserrat', sans-serif !important;
-}
-
-.email-input {
-    margin-top: 10px;
-}
-
-/* Estilo para el contenedor de Cambiar Contraseña */
-.cambiar-contrasena-container {
-    margin-top: 20px;
-}
-
-/* Estilo para los campos de Contraseña */
-.password-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-}
-
-.password-container input {
-    width: 45%;
-}
-
-/* Estilo para el contenedor del botón "Guardar Cambios" */
-.guardar-button-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Estilo para el botón "Guardar Cambios" */
-.guardar-button {
-    padding: 10px 20px;
-    background-color: #5EA0FF !important;
-    color: #fff;
-}
-
-.letra {
-    font-family: 'Montserrat', sans-serif !important;
-}
-
-
-
-/* Media Query para pantallas más pequeñas */
-/* Media Query para pantallas más pequeñas */
-@media only screen and (max-width: 500px) {
-    .container_detalles {
-        flex-direction: column;
-    }
-
-    .options, .content {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .options {
-        padding: 15px;
-        border-radius: 3px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        margin-bottom: 10px;
-    }
-
-    .pedido-detalle-container,
-    .cuenta-detalle-container,
-    .descargas-container {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 10px; /* Ajusta según sea necesario */
-    }
-
-    .email-container,
-    .cambiar-contrasena-container {
-        margin-top: 10px;
-    }
-
-    .custom-input,
-    .password-container input {
-        width: 100%;
-    }
-
-    .guardar-button-container {
-        margin-top: 20px;
-    }
-}
-
-
-
-
-
 
 /*Dropdown carrito*/
 .dropdown-content {
@@ -1311,20 +1084,20 @@ header {
     overflow-y: auto;
     color: #000;
     position: absolute;
-    background-color: #f9f9f9;
+    background: #13afef !important;
     min-width: 300px;
-    max-width: 500px;
+    width: 650px !important;
     max-height: 500px;
-    margin-top: 16.5px;
-    margin-right: 20px;
+    margin-top: 1px;
     right: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 div.dropdown-content > div.ui.grid.container > div.row{
     border-top: 2px solid #5EA0FF;
     padding-top: 0!important;
     padding-bottom: 2px;
+    
 }
 div.dropdown-content > div.ui.grid.container > div.row.carrito-menu-subtotal{
     border-top: 2px solid #5f5f5f!important;
@@ -1334,24 +1107,354 @@ div.dropdown-content > div.ui.grid.container > div.row > * {
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 10px;
+    
 }
 div.dropdown-content > div.ui.grid.container > div.row > div.two.wide.column{
     align-items: center;
     display: flex;
+    left: 10px;
+    
 }
 div.dropdown-content > div.ui.grid.container > div.row > div.eleven.wide.column > div.row *{
     display: flex;
+    
 }
 div.dropdown-content > div.ui.grid.container > div.row > div.eleven.wide.column > div.row > h3 > p{
     font-size: medium!important;
     color: #707070;
-    padding-left: 5px;
+    padding-left: 2px;
+    
 }
 .cart-icon.develop:hover .dropdown-content {
     display: block;
     right: 100%;
     transform: translateX(20%);
+    
 }
 div.dropdown-content > div.ui.grid.container{
     margin-top: 0!important;
+}
+
+
+/*modificaciones del carrito sub general*/
+
+.contenedor.sub.carrito.general {
+
+    /*ajuste el tamaño ya que quedadba feo*/
+    max-width: 600px!important;
+    margin-left: 69px;
+    margin-right: 45px;
+    margin-bottom: 60px;
+  }
+
+
+@media (max-width: 1001px) {
+    /*quitar el hover del carrito*/
+
+    .dropdown-content{
+        pointer-events: none;
+    }
+
+    .dropdown-content{
+        display: block;
+    }
+    .eight.wide.column.stackable {
+      width: 100% !important;
+    }
+    .out{
+        /*aqui quito el display none por que desaparece el cerracesion*/
+        
+    }
+    .row .ui.grid.container .two.column {
+      padding-left: 0;
+      padding-right: 15px;
+    }
+
+    .contenedor.sub.carrito.general > .ui .unstackable .celled .table .summary-table {
+        max-width: 93%;
+    }
+  }
+  
+  /*Este estilo no entiendo que hace*/
+  .ui.dropdown.selection:not(.multiple):not(.search)>.dropdown.icon {
+    color: #5599f8 !important;
+  }
+  .ui.selection.dropdown:hover {
+    border-color: #5599f8 !important;
+  }
+  
+  
+  .eight.wide.column.stackable .row.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 500px;
+  }
+  
+  .eight.wide.column.stackable .row {
+    min-height: 70px;
+  }
+  
+  .eight.wide.column.stackable img {
+    width: 75%;
+    max-height: 450px;
+  }
+  
+  .eight.wide.column.stackable .row:first-child>h1 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 15px;
+  }
+  
+  .eight.wide.column.stackable .row h2 .discounted-price,
+  .eight.wide.column.stackable .row h2 .original-price {
+    margin-right: 5px;
+  }
+  
+  .eight.wide.column.stackable .row h2 .discounted-price {
+    color: #98c3ff;
+    font-size: xx-large;
+  }
+  
+  .eight.wide.column.stackable .row h2 .original-price {
+    color: #a9b0ba;
+    text-decoration: line-through;
+    font-size: smaller;
+  }
+  
+  .eight.wide.column.stackable .row>p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .row .ui.grid.container .two.column {
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .row .ui.grid.container .two.column p {
+    font-weight: bold;
+  }
+  
+  .row .ui.action.input #quantity-input {
+    max-width: 80px;
+    min-width: 40px;
+  }
+  
+  .ui.vertical.animated.button {
+    background-color: transparent !important;
+    width: 70%;
+  }
+  
+  .ui.vertical.animated.button:hover {
+    background-color: transparent !important;
+  }
+  
+  .ui.vertical.animated.button:active {
+    background-color: transparent !important;
+  }
+  
+  .ui.vertical.animated.button .hidden.content {
+    color: #000;
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  .decrease-btn,
+  .increase-btn {
+    cursor: pointer;
+    border: 1px solid #797878 !important;
+    color: #272727 !important;
+    background-color: #fff !important;
+  }
+  .increase-btn:hover,
+  .decrease-btn:hover {
+    background-color: #5599f8 !important;
+    color: #fff !important;
+    border-color: #5599f8 !important;
+  }
+  
+  .ui.icon.primary.basic.button {
+    width: 100%;
+  }
+  
+  .ui.icon.primary.basic.button span.Text {
+    margin-left: 8px;
+  }
+  
+  /*estilos para mejorar diseño productos alejandro*/
+  
+  .nuevo-container {
+    background: #fff;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.3);
+    padding: 20px;
+  }
+  .ui.primary.basic.button:hover {
+    background-color: #5599f8 !important;
+    color: #fff !important;
+    border-color: #5599f8 !important;
+  }
+  
+  #quantity-input {
+    border: 1px solid #797878 !important;
+    border-radius: 0 !important;
+    width: 50px !important;
+    text-align: center;
+  }
+  
+  .decrease-btn {
+    border-radius: 0.28571429rem 0px 0px 0.28571429rem !important;
+  }
+  
+  /* Carrito General */
+  @media (max-width:1001px) {
+    #contenedor-car-general{
+      display: none !important;
+    }
+    #contenedor-car-responsive-padre{
+      display: flex;
+      justify-content: center;
+      margin-top: 80px;
+      margin-bottom: 15px;
+    }
+  }
+  @media (min-width: 1001px) {
+    #contenedor-car-responsive-padre{
+      display: none !important; 
+      
+    }
+  }
+  
+  #contenedor-car-responsive > .row.imagen{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    max-height: 150px;
+  }
+  #contenedor-car-responsive > .row.elementos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #contenedor-car-responsive > .row.elementos > div.izq {
+    text-align: left;
+    color: #878787;
+    font-weight: bold;
+  }
+  #contenedor-car-responsive > .row.elementos > div.dere {
+    text-align: right;
+  }
+  .row.elementos > div.cent {
+    text-align: center;
+  }
+  #contenedor-car-responsive > .row.imagen > img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #contenedor-car-general {
+    margin-top: 70px;
+    margin-bottom: 15px;
+  }
+
+
+  @media(max-width:410px){
+    .iva-general{
+        display: none;
+    }
+    .acumulado-general{
+        display: none;
+    }
+  }
+  #contenedor-car-general > .row > *{
+    border-bottom: 2px solid #272727;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Montserrat-Bold', sans-serif!important;
+  }
+  #contenedor-car-general > .row {
+    border-right: 2px solid #272727;
+    border-left: 2px solid #272727;
+    padding-bottom: 0px !important; 
+  }
+  #contenedor-car-general > .row.blue {
+    background-color: #13afef!important;
+    padding-bottom: 0px !important;
+    border-radius: 5px 5px 0px 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+  }
+  
+  #contenedor-car-general > .row.blue > * {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .total-carrito {
+    background-color: #13afef;
+    color: #FFF;
+  }
+
+.footer.modal {
+    justify-content: center;
+}
+
+/*Clases modificadas de semantic*/
+h2.ui.header {
+    z-index: 5;
+}
+
+.ui.right.pointing.dropdown > .menu {
+    margin: 0em 3em 0em 0em!important;
+}
+
+/* Menu del Detalles de compra */
+div.column.menu.izquierda {
+    width: 49%!important;
+    margin-right: auto;
+}
+
+div.column.menu.derecha {
+    width: 49%!important;
+    margin-left: auto;
+}
+div.detalle-compra {
+    background-color: #f1f1f1;
+    margin: 80px 10px;
+}
+
+table.tabla-detalle-compra{
+    margin-top: 60px!important;
+}
+
+/** CSS PARA EL MANEJO DE SETTINGS DE USUARIO **/
+
+span.user.redirect {
+    height: 40px;
+    width: 40px;
+    background-color: #13afef;
+    border-radius: 50%;
+    font-family: Montserrat-Bold;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.left-margin {
+    margin-left: 10px;
 }

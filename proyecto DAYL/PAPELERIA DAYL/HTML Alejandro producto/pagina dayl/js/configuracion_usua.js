@@ -19,8 +19,7 @@ function mostrarInputContrasena() {
 }
 
 function guardarCambios() {
-    // Aquí puedes agregar el código para guardar los cambios en la configuración
-    alert("Cambios guardados exitosamente"); // Ejemplo de mensaje de alerta
+    alert("Cambios guardados exitosamente");
 }
 
 $(document).ready(function () {
